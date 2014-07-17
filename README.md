@@ -9,10 +9,6 @@ A port of Apache Maven's VersionComparator class to Objective-C
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
 ## Installation
 
 GSVersionComparator is available through [CocoaPods](http://cocoapods.org). To install
@@ -22,7 +18,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-Ryan Brignoni, castral01@gmail.com
+Ryan Brignoni
 
 ## License
 
