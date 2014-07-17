@@ -35,4 +35,5 @@
 - (BOOL)gs_versionLessThan:(NSString *)version;
 - (BOOL)gs_versionGreaterThanOrEqualTo:(NSString *)version;
 - (BOOL)gs_versionLessThanOrEqualTo:(NSString *)version;
+- (BOOL)gs_versionEquals:(NSString *)version;
 @end

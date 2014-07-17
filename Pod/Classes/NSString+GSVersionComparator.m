@@ -59,4 +59,8 @@
     return ([self gs_compareVersionToVersionString:version] <= NSOrderedSame);
 }
 
+- (BOOL)gs_versionEquals:(NSString *)version {
+    return ([self gs_compareVersionToVersionString:version] == NSOrderedSame);
+}
+
 @end
