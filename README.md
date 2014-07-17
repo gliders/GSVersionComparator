@@ -1,5 +1,7 @@
 # GSVersionComparator
 
+A port of Apache Maven's VersionComparator class to Objective-C
+
 [![CI Status](http://img.shields.io/travis/Ryan Brignoni/GSVersionComparator.svg?style=flat)](https://travis-ci.org/Ryan Brignoni/GSVersionComparator)
 [![Version](https://img.shields.io/cocoapods/v/GSVersionComparator.svg?style=flat)](http://cocoadocs.org/docsets/GSVersionComparator)
 [![License](https://img.shields.io/cocoapods/l/GSVersionComparator.svg?style=flat)](http://cocoadocs.org/docsets/GSVersionComparator)
@@ -24,5 +26,6 @@ Ryan Brignoni, castral01@gmail.com
 
 ## License
 
-GSVersionComparator is available under the MIT license. See the LICENSE file for more info.
+GSVersionComparator is available under the Apache v2 license. See the LICENSE file for more info.
 
+=======
