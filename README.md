@@ -35,6 +35,8 @@ BOOL test = [@"1.0" gs_versionLessThan:@"1.0-SNAPSHOT"]; // Returns NO
 
 ```
 
+Check the [unit tests](https://github.com/gliders/GSVersionComparator/blob/master/Example/Tests/GSVersionComparatorTests.m) for more examples of version strings supported.
+
 ## Installation
 
 GSVersionComparator is available through [CocoaPods](http://cocoapods.org). To install
@@ -44,7 +46,8 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-Ryan Brignoni
+[Ryan Brignoni](https://github.com/castral)
+Twitter: [@RyanBrignoni](https://twitter.com/RyanBrignoni)
 
 ## License
 
