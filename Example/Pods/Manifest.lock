@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  GSVersionComparator: 3f59a8e01c2d6e4e9c34030f82a3bb4fabda38ba
+  GSVersionComparator: 11cef2c7a81cc0cf6487c0940f2d1ca4982e767a
 
 COCOAPODS: 0.33.1

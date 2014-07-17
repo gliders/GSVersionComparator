@@ -7,225 +7,225 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00F204027AB944E0B6E287C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5395ADED1847779DD807D1 /* Foundation.framework */; };
-		04C8599F7C3F4111808D17C4 /* GSComparableVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 973B78E81EF34A579CAF7637 /* GSComparableVersion.h */; };
-		06F8305A91554B0C9CB521A9 /* GSItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E03DBE1367470DBE7DA6F5 /* GSItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		1363B5D40FBA4C22A6F86D7A /* GSListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A55110F9E9C46F5A30E1EC6 /* GSListItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		227DD25BA3964908A67B2D38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5395ADED1847779DD807D1 /* Foundation.framework */; };
-		4A0377C0708A4D26958BCC70 /* GSIntegerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 8778DD3210EC456988213EAD /* GSIntegerItem.h */; };
-		4C91B9B0CC934CC2B6F1EB81 /* GSStringItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CDBDD7B7234C0DB78AE560 /* GSStringItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		4E75CACBCFB449449DE1F87D /* GSStringItem.h in Headers */ = {isa = PBXBuildFile; fileRef = B5217A4A804B4ADD8D85428C /* GSStringItem.h */; };
-		5FF194946DF745DE80FBA86E /* NSString+GSVersionComparator.h in Headers */ = {isa = PBXBuildFile; fileRef = A68821AF7BCC4833BDFB8340 /* NSString+GSVersionComparator.h */; };
-		65620B513BF44E45B95294EE /* Pods-GSVersionComparator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB50849F6114B3588D74D01 /* Pods-GSVersionComparator-dummy.m */; };
-		6A521D5A82DD4E81A4CBD1AE /* GSItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0947AA3409DD4F9D8DF63B84 /* GSItem.h */; };
-		83AAE378BA72485A9DD66AB7 /* GSComparableVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0281C543C0B44E16864CF27C /* GSComparableVersion.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		B7810C1E47F14AA8B442AE1B /* Pods-GSVersionComparator-GSVersionComparator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB3A29E1F77413ABA17F744 /* Pods-GSVersionComparator-GSVersionComparator-dummy.m */; };
-		C6D5DAA69E904D1FB033FC2D /* NSString+GSVersionComparator.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DBFA07DA754B2B980046C9 /* NSString+GSVersionComparator.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		DDFEDC803950446F8DF8426F /* GSListItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FB6DA11337341D99B5E6CB6 /* GSListItem.h */; };
-		DE599427938B4EA4B4E76496 /* libPods-GSVersionComparator-GSVersionComparator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1A933FAE6C4655ACD6A5A7 /* libPods-GSVersionComparator-GSVersionComparator.a */; };
-		F9321CDFFC1D473BB97682BC /* GSIntegerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC11354081246AC8FD330A3 /* GSIntegerItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		1E0884A3687D44BABF26708B /* GSItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C5C92B58624009A3BE9B8D /* GSItem.h */; };
+		31AB15F3CB534F8DA2369AA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F251B922034E6DAA1D8B8B /* Foundation.framework */; };
+		482C3601F5DA49FFB48903BA /* GSStringItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 537815B72BE1435E8D0E1BE2 /* GSStringItem.h */; };
+		505E5EC462B44F218BA92F0C /* GSItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 54981F2882684B039590D960 /* GSItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		73CC4DDE322A40CE80DC0526 /* GSComparableVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6F928A3D9B4B6BBA65FF42 /* GSComparableVersion.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		7B3112B3B67D430BBD4ACF5B /* libPods-GSVersionComparator-GSVersionComparator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDE13011517444B825B7FC3 /* libPods-GSVersionComparator-GSVersionComparator.a */; };
+		7DD89ACE7C744D808DF07E78 /* Pods-GSVersionComparator-GSVersionComparator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3640303A2E0842CE8EA62E27 /* Pods-GSVersionComparator-GSVersionComparator-dummy.m */; };
+		8CD15EE130E24FC5847C3821 /* Pods-GSVersionComparator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0646F0C8CEF044468F8B23E3 /* Pods-GSVersionComparator-dummy.m */; };
+		900361C2613447EFB63118AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F251B922034E6DAA1D8B8B /* Foundation.framework */; };
+		A04D3DF637D94231B6EE9237 /* GSComparableVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = B80487D16C4240399EC59862 /* GSComparableVersion.h */; };
+		B8338BC22D694E738F178E56 /* GSIntegerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 737A9B297FC540048AA7AE2B /* GSIntegerItem.h */; };
+		BE3C539CDFA643308687068E /* NSString+GSVersionComparator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D6A3EFB5E29495689D02EBA /* NSString+GSVersionComparator.h */; };
+		C7CAFCB760D04524ABDB33A8 /* GSStringItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B16E55EBD1084234A2679A14 /* GSStringItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DFDE9E341B2F4B10B3F76C51 /* NSString+GSVersionComparator.m in Sources */ = {isa = PBXBuildFile; fileRef = E694AB98328B4AD7AB8C2D1C /* NSString+GSVersionComparator.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		E158F8898A2D4798AC372EC3 /* GSListItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 747B7C6C0B7B4279BCB6643D /* GSListItem.h */; };
+		EC0819FF6C954582B5E17E3A /* GSListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C543DC84FD4C8BBADD80E6 /* GSListItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		FA97B8B3959241CF8A8F624E /* GSIntegerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 330EA7D2539C42A886FED343 /* GSIntegerItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D669C26504F2498BB233741D /* PBXContainerItemProxy */ = {
+		2C1099724120467487F7E23E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A8BB0F5BC4BE427FB39E9467 /* Project object */;
+			containerPortal = 6333F7F29E494BE492BEA81C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D3766487E934275982CC543;
+			remoteGlobalIDString = C8A46317E73B49848EB647A3;
 			remoteInfo = "Pods-GSVersionComparator-GSVersionComparator";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0281C543C0B44E16864CF27C /* GSComparableVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSComparableVersion.m; path = Pod/Classes/GSComparableVersion.m; sourceTree = "<group>"; };
-		0947AA3409DD4F9D8DF63B84 /* GSItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSItem.h; path = Pod/Classes/GSItem.h; sourceTree = "<group>"; };
-		0D5395ADED1847779DD807D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		2EB3A29E1F77413ABA17F744 /* Pods-GSVersionComparator-GSVersionComparator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GSVersionComparator-GSVersionComparator-dummy.m"; sourceTree = "<group>"; };
-		30389B5D1A914E6DBE4292EC /* Pods-GSVersionComparator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GSVersionComparator-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3C9B16A4DE7F4FA5846770CB /* Pods-GSVersionComparator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSVersionComparator.xcconfig"; sourceTree = "<group>"; };
-		43E03DBE1367470DBE7DA6F5 /* GSItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSItem.m; path = Pod/Classes/GSItem.m; sourceTree = "<group>"; };
-		4C1A933FAE6C4655ACD6A5A7 /* libPods-GSVersionComparator-GSVersionComparator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GSVersionComparator-GSVersionComparator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DB50849F6114B3588D74D01 /* Pods-GSVersionComparator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GSVersionComparator-dummy.m"; sourceTree = "<group>"; };
-		7A55110F9E9C46F5A30E1EC6 /* GSListItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSListItem.m; path = Pod/Classes/GSListItem.m; sourceTree = "<group>"; };
-		7FB6DA11337341D99B5E6CB6 /* GSListItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSListItem.h; path = Pod/Classes/GSListItem.h; sourceTree = "<group>"; };
-		8778DD3210EC456988213EAD /* GSIntegerItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSIntegerItem.h; path = Pod/Classes/GSIntegerItem.h; sourceTree = "<group>"; };
-		8A315BBF82C84AC393E0CC55 /* Pods-GSVersionComparator-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GSVersionComparator-environment.h"; sourceTree = "<group>"; };
-		91ED4F9612D24CAD85345BDE /* Pods-GSVersionComparator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GSVersionComparator-acknowledgements.plist"; sourceTree = "<group>"; };
-		95A10387923C4F84A5E84398 /* Pods-GSVersionComparator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GSVersionComparator-resources.sh"; sourceTree = "<group>"; };
-		973B78E81EF34A579CAF7637 /* GSComparableVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSComparableVersion.h; path = Pod/Classes/GSComparableVersion.h; sourceTree = "<group>"; };
-		A68821AF7BCC4833BDFB8340 /* NSString+GSVersionComparator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+GSVersionComparator.h"; path = "Pod/Classes/NSString+GSVersionComparator.h"; sourceTree = "<group>"; };
-		ABC11354081246AC8FD330A3 /* GSIntegerItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSIntegerItem.m; path = Pod/Classes/GSIntegerItem.m; sourceTree = "<group>"; };
-		B5217A4A804B4ADD8D85428C /* GSStringItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSStringItem.h; path = Pod/Classes/GSStringItem.h; sourceTree = "<group>"; };
-		BAFB8FBC922C4902BE3DE2C7 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BB39E21077A74B1491A71FE2 /* libPods-GSVersionComparator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GSVersionComparator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C41F0A4746B546E0A5454FE0 /* Pods-GSVersionComparator-GSVersionComparator-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSVersionComparator-GSVersionComparator-Private.xcconfig"; sourceTree = "<group>"; };
-		D2CC8C4E12764FBDA243006B /* Pods-GSVersionComparator-GSVersionComparator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSVersionComparator-GSVersionComparator.xcconfig"; sourceTree = "<group>"; };
-		E3DBFA07DA754B2B980046C9 /* NSString+GSVersionComparator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+GSVersionComparator.m"; path = "Pod/Classes/NSString+GSVersionComparator.m"; sourceTree = "<group>"; };
-		E7CDBDD7B7234C0DB78AE560 /* GSStringItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSStringItem.m; path = Pod/Classes/GSStringItem.m; sourceTree = "<group>"; };
-		F932495F85E14C76BDFA8983 /* Pods-GSVersionComparator-GSVersionComparator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GSVersionComparator-GSVersionComparator-prefix.pch"; sourceTree = "<group>"; };
+		0646F0C8CEF044468F8B23E3 /* Pods-GSVersionComparator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GSVersionComparator-dummy.m"; sourceTree = "<group>"; };
+		0D6A3EFB5E29495689D02EBA /* NSString+GSVersionComparator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+GSVersionComparator.h"; path = "Pod/Classes/NSString+GSVersionComparator.h"; sourceTree = "<group>"; };
+		19C543DC84FD4C8BBADD80E6 /* GSListItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSListItem.m; path = Pod/Classes/GSListItem.m; sourceTree = "<group>"; };
+		330EA7D2539C42A886FED343 /* GSIntegerItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSIntegerItem.m; path = Pod/Classes/GSIntegerItem.m; sourceTree = "<group>"; };
+		35C5C92B58624009A3BE9B8D /* GSItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSItem.h; path = Pod/Classes/GSItem.h; sourceTree = "<group>"; };
+		3640303A2E0842CE8EA62E27 /* Pods-GSVersionComparator-GSVersionComparator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GSVersionComparator-GSVersionComparator-dummy.m"; sourceTree = "<group>"; };
+		3E6F928A3D9B4B6BBA65FF42 /* GSComparableVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSComparableVersion.m; path = Pod/Classes/GSComparableVersion.m; sourceTree = "<group>"; };
+		4B3184739CA24EF1935DE0C9 /* Pods-GSVersionComparator-GSVersionComparator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSVersionComparator-GSVersionComparator.xcconfig"; sourceTree = "<group>"; };
+		537815B72BE1435E8D0E1BE2 /* GSStringItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSStringItem.h; path = Pod/Classes/GSStringItem.h; sourceTree = "<group>"; };
+		54981F2882684B039590D960 /* GSItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSItem.m; path = Pod/Classes/GSItem.m; sourceTree = "<group>"; };
+		579A6E0E9C754F90A299A253 /* libPods-GSVersionComparator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GSVersionComparator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		682E5669975A47AC8AE06CFE /* Pods-GSVersionComparator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GSVersionComparator-acknowledgements.plist"; sourceTree = "<group>"; };
+		6D1DDA0BD00F4B22B3EEA5B2 /* Pods-GSVersionComparator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GSVersionComparator-resources.sh"; sourceTree = "<group>"; };
+		706456DA543A4273AFE8DDEB /* Pods-GSVersionComparator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSVersionComparator.xcconfig"; sourceTree = "<group>"; };
+		737A9B297FC540048AA7AE2B /* GSIntegerItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSIntegerItem.h; path = Pod/Classes/GSIntegerItem.h; sourceTree = "<group>"; };
+		747B7C6C0B7B4279BCB6643D /* GSListItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSListItem.h; path = Pod/Classes/GSListItem.h; sourceTree = "<group>"; };
+		B16E55EBD1084234A2679A14 /* GSStringItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSStringItem.m; path = Pod/Classes/GSStringItem.m; sourceTree = "<group>"; };
+		B6F251B922034E6DAA1D8B8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B80487D16C4240399EC59862 /* GSComparableVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSComparableVersion.h; path = Pod/Classes/GSComparableVersion.h; sourceTree = "<group>"; };
+		BB01E6D787394768BF0A486C /* Pods-GSVersionComparator-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GSVersionComparator-environment.h"; sourceTree = "<group>"; };
+		C408CD440F36490ABF3D5182 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DCD3D969AB324A268A01D1A9 /* Pods-GSVersionComparator-GSVersionComparator-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSVersionComparator-GSVersionComparator-Private.xcconfig"; sourceTree = "<group>"; };
+		DFAE9844A1614398A0D373FB /* Pods-GSVersionComparator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GSVersionComparator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DFDE13011517444B825B7FC3 /* libPods-GSVersionComparator-GSVersionComparator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GSVersionComparator-GSVersionComparator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1B29646D1C8457092475262 /* Pods-GSVersionComparator-GSVersionComparator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GSVersionComparator-GSVersionComparator-prefix.pch"; sourceTree = "<group>"; };
+		E694AB98328B4AD7AB8C2D1C /* NSString+GSVersionComparator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+GSVersionComparator.m"; path = "Pod/Classes/NSString+GSVersionComparator.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C5899B29BD3546A09D1C8CD1 /* Frameworks */ = {
+		42302A706D784A8EA315A1B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				227DD25BA3964908A67B2D38 /* Foundation.framework in Frameworks */,
-				DE599427938B4EA4B4E76496 /* libPods-GSVersionComparator-GSVersionComparator.a in Frameworks */,
+				31AB15F3CB534F8DA2369AA4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E032CF219DDC4D648B9B2A58 /* Frameworks */ = {
+		7356C59F879742CAA45CD044 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00F204027AB944E0B6E287C8 /* Foundation.framework in Frameworks */,
+				900361C2613447EFB63118AF /* Foundation.framework in Frameworks */,
+				7B3112B3B67D430BBD4ACF5B /* libPods-GSVersionComparator-GSVersionComparator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0ABEDCE4A6164C69A088B090 /* Frameworks */ = {
+		236F7B96E6B94449829A92B5 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1654AB8ACC294A2F93631F56 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1654AB8ACC294A2F93631F56 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				0D5395ADED1847779DD807D1 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		295BF69E631C44CA95895F0A /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EFC280B6900E4CADBE8194B8 /* GSVersionComparator */,
+				402430E046F5425BA26273A6 /* GSVersionComparator */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		2DBC00E6A8204E55BEBF408D /* Targets Support Files */ = {
+		26AF055699B741A595C6B56A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				573F36C2995B455DA5356266 /* Pods-GSVersionComparator */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		573F36C2995B455DA5356266 /* Pods-GSVersionComparator */ = {
-			isa = PBXGroup;
-			children = (
-				3C9B16A4DE7F4FA5846770CB /* Pods-GSVersionComparator.xcconfig */,
-				30389B5D1A914E6DBE4292EC /* Pods-GSVersionComparator-acknowledgements.markdown */,
-				91ED4F9612D24CAD85345BDE /* Pods-GSVersionComparator-acknowledgements.plist */,
-				6DB50849F6114B3588D74D01 /* Pods-GSVersionComparator-dummy.m */,
-				8A315BBF82C84AC393E0CC55 /* Pods-GSVersionComparator-environment.h */,
-				95A10387923C4F84A5E84398 /* Pods-GSVersionComparator-resources.sh */,
-			);
-			name = "Pods-GSVersionComparator";
-			sourceTree = "<group>";
-		};
-		7BCC7969E3DF471CB9B7FD27 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D2CC8C4E12764FBDA243006B /* Pods-GSVersionComparator-GSVersionComparator.xcconfig */,
-				C41F0A4746B546E0A5454FE0 /* Pods-GSVersionComparator-GSVersionComparator-Private.xcconfig */,
-				2EB3A29E1F77413ABA17F744 /* Pods-GSVersionComparator-GSVersionComparator-dummy.m */,
-				F932495F85E14C76BDFA8983 /* Pods-GSVersionComparator-GSVersionComparator-prefix.pch */,
+				4B3184739CA24EF1935DE0C9 /* Pods-GSVersionComparator-GSVersionComparator.xcconfig */,
+				DCD3D969AB324A268A01D1A9 /* Pods-GSVersionComparator-GSVersionComparator-Private.xcconfig */,
+				3640303A2E0842CE8EA62E27 /* Pods-GSVersionComparator-GSVersionComparator-dummy.m */,
+				E1B29646D1C8457092475262 /* Pods-GSVersionComparator-GSVersionComparator-prefix.pch */,
 			);
 			name = "Support Files";
 			sourceTree = SOURCE_ROOT;
 		};
-		9559E33F53864C18BFC04BE4 /* Products */ = {
+		402430E046F5425BA26273A6 /* GSVersionComparator */ = {
 			isa = PBXGroup;
 			children = (
-				BB39E21077A74B1491A71FE2 /* libPods-GSVersionComparator.a */,
-				4C1A933FAE6C4655ACD6A5A7 /* libPods-GSVersionComparator-GSVersionComparator.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9A76B9B6FC8D45049D52D7F7 = {
-			isa = PBXGroup;
-			children = (
-				BAFB8FBC922C4902BE3DE2C7 /* Podfile */,
-				295BF69E631C44CA95895F0A /* Development Pods */,
-				0ABEDCE4A6164C69A088B090 /* Frameworks */,
-				9559E33F53864C18BFC04BE4 /* Products */,
-				2DBC00E6A8204E55BEBF408D /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		EFC280B6900E4CADBE8194B8 /* GSVersionComparator */ = {
-			isa = PBXGroup;
-			children = (
-				973B78E81EF34A579CAF7637 /* GSComparableVersion.h */,
-				0281C543C0B44E16864CF27C /* GSComparableVersion.m */,
-				8778DD3210EC456988213EAD /* GSIntegerItem.h */,
-				ABC11354081246AC8FD330A3 /* GSIntegerItem.m */,
-				0947AA3409DD4F9D8DF63B84 /* GSItem.h */,
-				43E03DBE1367470DBE7DA6F5 /* GSItem.m */,
-				7FB6DA11337341D99B5E6CB6 /* GSListItem.h */,
-				7A55110F9E9C46F5A30E1EC6 /* GSListItem.m */,
-				B5217A4A804B4ADD8D85428C /* GSStringItem.h */,
-				E7CDBDD7B7234C0DB78AE560 /* GSStringItem.m */,
-				A68821AF7BCC4833BDFB8340 /* NSString+GSVersionComparator.h */,
-				E3DBFA07DA754B2B980046C9 /* NSString+GSVersionComparator.m */,
-				7BCC7969E3DF471CB9B7FD27 /* Support Files */,
+				B80487D16C4240399EC59862 /* GSComparableVersion.h */,
+				3E6F928A3D9B4B6BBA65FF42 /* GSComparableVersion.m */,
+				737A9B297FC540048AA7AE2B /* GSIntegerItem.h */,
+				330EA7D2539C42A886FED343 /* GSIntegerItem.m */,
+				35C5C92B58624009A3BE9B8D /* GSItem.h */,
+				54981F2882684B039590D960 /* GSItem.m */,
+				747B7C6C0B7B4279BCB6643D /* GSListItem.h */,
+				19C543DC84FD4C8BBADD80E6 /* GSListItem.m */,
+				537815B72BE1435E8D0E1BE2 /* GSStringItem.h */,
+				B16E55EBD1084234A2679A14 /* GSStringItem.m */,
+				0D6A3EFB5E29495689D02EBA /* NSString+GSVersionComparator.h */,
+				E694AB98328B4AD7AB8C2D1C /* NSString+GSVersionComparator.m */,
+				26AF055699B741A595C6B56A /* Support Files */,
 			);
 			name = GSVersionComparator;
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		C527D97D054642C5B4D05298 /* Pods-GSVersionComparator */ = {
+			isa = PBXGroup;
+			children = (
+				706456DA543A4273AFE8DDEB /* Pods-GSVersionComparator.xcconfig */,
+				DFAE9844A1614398A0D373FB /* Pods-GSVersionComparator-acknowledgements.markdown */,
+				682E5669975A47AC8AE06CFE /* Pods-GSVersionComparator-acknowledgements.plist */,
+				0646F0C8CEF044468F8B23E3 /* Pods-GSVersionComparator-dummy.m */,
+				BB01E6D787394768BF0A486C /* Pods-GSVersionComparator-environment.h */,
+				6D1DDA0BD00F4B22B3EEA5B2 /* Pods-GSVersionComparator-resources.sh */,
+			);
+			name = "Pods-GSVersionComparator";
+			sourceTree = "<group>";
+		};
+		CA21DC362D384D6C8F9A14A1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C527D97D054642C5B4D05298 /* Pods-GSVersionComparator */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CC746C8CABC04963A4187398 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				579A6E0E9C754F90A299A253 /* libPods-GSVersionComparator.a */,
+				DFDE13011517444B825B7FC3 /* libPods-GSVersionComparator-GSVersionComparator.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7C427EC1024497791E36B6D = {
+			isa = PBXGroup;
+			children = (
+				C408CD440F36490ABF3D5182 /* Podfile */,
+				236F7B96E6B94449829A92B5 /* Development Pods */,
+				F4DF2A977D8A48C0B5D012EC /* Frameworks */,
+				CC746C8CABC04963A4187398 /* Products */,
+				CA21DC362D384D6C8F9A14A1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F4DF2A977D8A48C0B5D012EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB49AFE415184E23B9E0B290 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB49AFE415184E23B9E0B290 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B6F251B922034E6DAA1D8B8B /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8751D4DE0124456983174AD4 /* Headers */ = {
+		54D15308E7944096A936F010 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C8599F7C3F4111808D17C4 /* GSComparableVersion.h in Headers */,
-				4A0377C0708A4D26958BCC70 /* GSIntegerItem.h in Headers */,
-				6A521D5A82DD4E81A4CBD1AE /* GSItem.h in Headers */,
-				DDFEDC803950446F8DF8426F /* GSListItem.h in Headers */,
-				4E75CACBCFB449449DE1F87D /* GSStringItem.h in Headers */,
-				5FF194946DF745DE80FBA86E /* NSString+GSVersionComparator.h in Headers */,
+				A04D3DF637D94231B6EE9237 /* GSComparableVersion.h in Headers */,
+				B8338BC22D694E738F178E56 /* GSIntegerItem.h in Headers */,
+				1E0884A3687D44BABF26708B /* GSItem.h in Headers */,
+				E158F8898A2D4798AC372EC3 /* GSListItem.h in Headers */,
+				482C3601F5DA49FFB48903BA /* GSStringItem.h in Headers */,
+				BE3C539CDFA643308687068E /* NSString+GSVersionComparator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5F12C78F93F54C959B1255C3 /* Pods-GSVersionComparator */ = {
+		1CD164A882324D0FB2D1E519 /* Pods-GSVersionComparator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37F55608C49B485D90D5A8EB /* Build configuration list for PBXNativeTarget "Pods-GSVersionComparator" */;
+			buildConfigurationList = 4729079F028C43DC8DD089AE /* Build configuration list for PBXNativeTarget "Pods-GSVersionComparator" */;
 			buildPhases = (
-				E370B190598C487DB696F5B8 /* Sources */,
-				C5899B29BD3546A09D1C8CD1 /* Frameworks */,
+				6FDA7E7167234C2282BB0BDB /* Sources */,
+				7356C59F879742CAA45CD044 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BAA323E6032E49309F073846 /* PBXTargetDependency */,
+				65D9A6F1EC784E898B8A227E /* PBXTargetDependency */,
 			);
 			name = "Pods-GSVersionComparator";
 			productName = "Pods-GSVersionComparator";
-			productReference = BB39E21077A74B1491A71FE2 /* libPods-GSVersionComparator.a */;
+			productReference = 579A6E0E9C754F90A299A253 /* libPods-GSVersionComparator.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		8D3766487E934275982CC543 /* Pods-GSVersionComparator-GSVersionComparator */ = {
+		C8A46317E73B49848EB647A3 /* Pods-GSVersionComparator-GSVersionComparator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0318C7C4957A4AED88A8F2AC /* Build configuration list for PBXNativeTarget "Pods-GSVersionComparator-GSVersionComparator" */;
+			buildConfigurationList = 57A41AD0067B4EA2AB784A94 /* Build configuration list for PBXNativeTarget "Pods-GSVersionComparator-GSVersionComparator" */;
 			buildPhases = (
-				948162482EC74DECB59453AD /* Sources */,
-				E032CF219DDC4D648B9B2A58 /* Frameworks */,
-				8751D4DE0124456983174AD4 /* Headers */,
+				F56E89F21E07448B8103C848 /* Sources */,
+				42302A706D784A8EA315A1B9 /* Frameworks */,
+				54D15308E7944096A936F010 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -233,72 +233,128 @@
 			);
 			name = "Pods-GSVersionComparator-GSVersionComparator";
 			productName = "Pods-GSVersionComparator-GSVersionComparator";
-			productReference = 4C1A933FAE6C4655ACD6A5A7 /* libPods-GSVersionComparator-GSVersionComparator.a */;
+			productReference = DFDE13011517444B825B7FC3 /* libPods-GSVersionComparator-GSVersionComparator.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A8BB0F5BC4BE427FB39E9467 /* Project object */ = {
+		6333F7F29E494BE492BEA81C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = D4E15A74D2FB49E9A2F3F851 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 395C5973A42A47E993B9BA63 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 9A76B9B6FC8D45049D52D7F7;
-			productRefGroup = 9559E33F53864C18BFC04BE4 /* Products */;
+			mainGroup = E7C427EC1024497791E36B6D;
+			productRefGroup = CC746C8CABC04963A4187398 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 			);
 			projectRoot = "";
 			targets = (
-				5F12C78F93F54C959B1255C3 /* Pods-GSVersionComparator */,
-				8D3766487E934275982CC543 /* Pods-GSVersionComparator-GSVersionComparator */,
+				1CD164A882324D0FB2D1E519 /* Pods-GSVersionComparator */,
+				C8A46317E73B49848EB647A3 /* Pods-GSVersionComparator-GSVersionComparator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		948162482EC74DECB59453AD /* Sources */ = {
+		6FDA7E7167234C2282BB0BDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83AAE378BA72485A9DD66AB7 /* GSComparableVersion.m in Sources */,
-				F9321CDFFC1D473BB97682BC /* GSIntegerItem.m in Sources */,
-				06F8305A91554B0C9CB521A9 /* GSItem.m in Sources */,
-				1363B5D40FBA4C22A6F86D7A /* GSListItem.m in Sources */,
-				4C91B9B0CC934CC2B6F1EB81 /* GSStringItem.m in Sources */,
-				C6D5DAA69E904D1FB033FC2D /* NSString+GSVersionComparator.m in Sources */,
-				B7810C1E47F14AA8B442AE1B /* Pods-GSVersionComparator-GSVersionComparator-dummy.m in Sources */,
+				8CD15EE130E24FC5847C3821 /* Pods-GSVersionComparator-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E370B190598C487DB696F5B8 /* Sources */ = {
+		F56E89F21E07448B8103C848 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65620B513BF44E45B95294EE /* Pods-GSVersionComparator-dummy.m in Sources */,
+				73CC4DDE322A40CE80DC0526 /* GSComparableVersion.m in Sources */,
+				FA97B8B3959241CF8A8F624E /* GSIntegerItem.m in Sources */,
+				505E5EC462B44F218BA92F0C /* GSItem.m in Sources */,
+				EC0819FF6C954582B5E17E3A /* GSListItem.m in Sources */,
+				C7CAFCB760D04524ABDB33A8 /* GSStringItem.m in Sources */,
+				DFDE9E341B2F4B10B3F76C51 /* NSString+GSVersionComparator.m in Sources */,
+				7DD89ACE7C744D808DF07E78 /* Pods-GSVersionComparator-GSVersionComparator-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BAA323E6032E49309F073846 /* PBXTargetDependency */ = {
+		65D9A6F1EC784E898B8A227E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8D3766487E934275982CC543 /* Pods-GSVersionComparator-GSVersionComparator */;
-			targetProxy = D669C26504F2498BB233741D /* PBXContainerItemProxy */;
+			target = C8A46317E73B49848EB647A3 /* Pods-GSVersionComparator-GSVersionComparator */;
+			targetProxy = 2C1099724120467487F7E23E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		03111A5884CB4E2EB3073CE1 /* Release */ = {
+		10C3AE1FDB00485B89ACC940 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 706456DA543A4273AFE8DDEB /* Pods-GSVersionComparator.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2845D4CD30CB44F8900319A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 706456DA543A4273AFE8DDEB /* Pods-GSVersionComparator.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2D9BB42962EB47C9AB4DA522 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -328,93 +384,9 @@
 			};
 			name = Release;
 		};
-		319B0BEE9B604870B30746B5 /* Debug */ = {
+		4A2EE2528DAF4D9D8E2881A7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C41F0A4746B546E0A5454FE0 /* Pods-GSVersionComparator-GSVersionComparator-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-GSVersionComparator-GSVersionComparator-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		5503F8695A454989867D6469 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C9B16A4DE7F4FA5846770CB /* Pods-GSVersionComparator.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		7B2D53FD979442A486FDC3D1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C9B16A4DE7F4FA5846770CB /* Pods-GSVersionComparator.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		CF06F5099BBD4484AC88B679 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C41F0A4746B546E0A5454FE0 /* Pods-GSVersionComparator-GSVersionComparator-Private.xcconfig */;
+			baseConfigurationReference = DCD3D969AB324A268A01D1A9 /* Pods-GSVersionComparator-GSVersionComparator-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
@@ -442,7 +414,7 @@
 			};
 			name = Release;
 		};
-		DE6FDE38DAB2454BAC8292BA /* Debug */ = {
+		4B8181EF4DB34992924BF86C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -478,37 +450,65 @@
 			};
 			name = Debug;
 		};
+		FA7A7F3B5AE3469F84AEC07A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCD3D969AB324A268A01D1A9 /* Pods-GSVersionComparator-GSVersionComparator-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-GSVersionComparator-GSVersionComparator-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0318C7C4957A4AED88A8F2AC /* Build configuration list for PBXNativeTarget "Pods-GSVersionComparator-GSVersionComparator" */ = {
+		395C5973A42A47E993B9BA63 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				319B0BEE9B604870B30746B5 /* Debug */,
-				CF06F5099BBD4484AC88B679 /* Release */,
+				4B8181EF4DB34992924BF86C /* Debug */,
+				2D9BB42962EB47C9AB4DA522 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37F55608C49B485D90D5A8EB /* Build configuration list for PBXNativeTarget "Pods-GSVersionComparator" */ = {
+		4729079F028C43DC8DD089AE /* Build configuration list for PBXNativeTarget "Pods-GSVersionComparator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5503F8695A454989867D6469 /* Debug */,
-				7B2D53FD979442A486FDC3D1 /* Release */,
+				2845D4CD30CB44F8900319A8 /* Debug */,
+				10C3AE1FDB00485B89ACC940 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4E15A74D2FB49E9A2F3F851 /* Build configuration list for PBXProject "Pods" */ = {
+		57A41AD0067B4EA2AB784A94 /* Build configuration list for PBXNativeTarget "Pods-GSVersionComparator-GSVersionComparator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE6FDE38DAB2454BAC8292BA /* Debug */,
-				03111A5884CB4E2EB3073CE1 /* Release */,
+				FA7A7F3B5AE3469F84AEC07A /* Debug */,
+				4A2EE2528DAF4D9D8E2881A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A8BB0F5BC4BE427FB39E9467 /* Project object */;
+	rootObject = 6333F7F29E494BE492BEA81C /* Project object */;
 }
