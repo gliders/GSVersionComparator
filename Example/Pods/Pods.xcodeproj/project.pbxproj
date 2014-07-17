@@ -7,481 +7,225 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		011FCB3B98FE4256AD041F25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB5015060274CACA2FE9A4D /* Foundation.framework */; };
-		02D8A1604CF642CAA6AB099C /* GHTestUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 36674AC57A704FBAAF52F770 /* GHTestUtils.h */; };
-		0971CC477E15483080452010 /* GHImageDiffView.h in Headers */ = {isa = PBXBuildFile; fileRef = E0CD7570801A439384149D6A /* GHImageDiffView.h */; };
-		0CBCDBA4840942F095D4B5C9 /* GHUnitIPhoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF333BDE54CE4D579BBDC8E0 /* GHUnitIPhoneAppDelegate.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		10C3F42E0C9641348984DC59 /* GHTest+JUnitXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 42442E85EC1845E29BD0A279 /* GHTest+JUnitXML.h */; };
-		11C66EB1E2AA4951B7C6FCD7 /* GHUnitIOSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B506A3437490467CAA6CD0AF /* GHUnitIOSViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		203A792EAC754DF99F7AB47B /* GHUnitIOSViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B41F1CAC1D74988AD8E5FF5 /* GHUnitIOSViewController.h */; };
-		207F92CF314C4C4985297C31 /* GHMockNSURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = C6894E1C4299422CA30216CE /* GHMockNSURLConnection.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		234A95E501B24AAEAE6C71B5 /* GHUnitIOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F50B71ACBA44A0294C0A6DB /* GHUnitIOSAppDelegate.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		24247052E875403FB9A6057C /* GHTest+JUnitXML.m in Sources */ = {isa = PBXBuildFile; fileRef = E67F16ED27C14B1093518A1A /* GHTest+JUnitXML.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		2936BABB94FD404B9CFF7A3E /* GTMObjC2Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5F49FD9A6741BF9F87A84C /* GTMObjC2Runtime.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		29DFE899813A41DAACD0D07D /* GHUIImageViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F971698DF542A98F1DB91E /* GHUIImageViewControl.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		2FB5F190D186447F9318857F /* GHTestViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 722B1BFEA0B244678B3541A3 /* GHTestViewModel.h */; };
-		326A32A0D2D348C4AC5F5FCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB5015060274CACA2FE9A4D /* Foundation.framework */; };
-		3947813B00924B82AE9B4239 /* GHUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = E8919D8E440A4E4FBD473529 /* GHUnit.h */; };
-		3C072C49DBEE4BBE91E052E8 /* GSStringItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F1196DDC25BB42DBA1A9FA20 /* GSStringItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3CB823320BA14C34B654E39D /* Pods-GSVersionComparator-GSVersionComparator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0ABA0D51C5E414D8E0D550E /* Pods-GSVersionComparator-GSVersionComparator-dummy.m */; };
-		40F1CF602D2D476AB87AA22C /* GHUIImageViewControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C3FF8977A6547028D8E64DB /* GHUIImageViewControl.h */; };
-		417625EABE4944A1A046447E /* Pods-GSVersionComparator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6883EE28FB5F4DDB9E6686CA /* Pods-GSVersionComparator-dummy.m */; };
-		43E26AE90275436C82160C17 /* GHViewTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = DB8D2311DAD040F7AEA95736 /* GHViewTestCase.h */; };
-		4411C1B08CAA4E829ABC6B38 /* GHTestRunner.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EC3C01FBD3841B4BC983A70 /* GHTestRunner.h */; };
-		4447374862F4450F94835DB4 /* GHTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F4AA3006648C29B394E76 /* GHTesting.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		4492484D229942AD83A9AF89 /* NSString+GSVersionComparator.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E86AB8D79A4245900E5277 /* NSString+GSVersionComparator.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		466ABF1C0A39457A9462E530 /* GHUnitIOSTestView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A0B200F5EED4A71AE6351F8 /* GHUnitIOSTestView.h */; };
-		49F63E378DEB4E288DE48D83 /* GHTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A22F6FCDD994097B7CEF137 /* GHTestUtils.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		4A1AB30EB1834B6AA0C6C5FA /* GHTestGroup+JUnitXML.m in Sources */ = {isa = PBXBuildFile; fileRef = C41B925BE93E4BAC88E5711C /* GHTestGroup+JUnitXML.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		4A2130C531704C99B4B235F1 /* GHUnitIOSAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 40AC82BFDF604215A75C92FC /* GHUnitIOSAppDelegate.h */; };
-		4E0F6435D71F4E2484BB09C0 /* GHTestGroup+JUnitXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 3921499300154F019E3F1C4E /* GHTestGroup+JUnitXML.h */; };
-		50007A3D7B214F5D85C2BB35 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F3914CBB7A4523ACEB0EBD /* QuartzCore.framework */; };
-		518D6C14C7A345CDBEF92D23 /* GTMNSString+XML.h in Headers */ = {isa = PBXBuildFile; fileRef = 023FE7D5D6CB4F588FE10665 /* GTMNSString+XML.h */; };
-		53D03E256C284D18A19A6979 /* GHTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDA610815745C29BF366AE /* GHTestCase.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		545E793882324315B1136E14 /* libPods-GSVersionComparator-GSVersionComparator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD9F3F78A944F1A8AF39087 /* libPods-GSVersionComparator-GSVersionComparator.a */; };
-		5FCD759B420045F3B9DFCCF7 /* GHTestRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 053AB8BC5AE44A1990A9A621 /* GHTestRunner.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		6596CC6A0C4B40DB93D48135 /* GHTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A0A291B761420FB8B02E6A /* GHTestCase.h */; };
-		66C6B0B8A7B14E6E99DEB4BB /* Pods-GSVersionComparator-GHUnit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B2CF9BC3FD417099E8CAA4 /* Pods-GSVersionComparator-GHUnit-dummy.m */; };
-		67883BF3DB0C4D3E96C36FAA /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D209E4368C34D5EB5591BAD /* GTMDefines.h */; };
-		70915CD1840E48BF80D36766 /* GSListItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 84BC46565B454BB28DBD1664 /* GSListItem.h */; };
-		8171D7C38A164E4FB330B6EB /* NSValue+GHValueFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE9190C261C4543AD412A2A /* NSValue+GHValueFormatter.h */; };
-		85A273EA3B3547D6AD9CDC7F /* GHTestGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = E07FC70FF5DC49C48A30B5A3 /* GHTestGroup.h */; };
-		8AD71A67E3A44FCEAB7588EF /* GHTest.h in Headers */ = {isa = PBXBuildFile; fileRef = C31BA013D4CD4C23A85DE314 /* GHTest.h */; };
-		8F12A832F14744B9A48BDDB0 /* GHTestSuite.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3DA30C459E48AC9A0DA859 /* GHTestSuite.h */; };
-		91B86033B66A44FBB0BDD6D8 /* GHUnitIOSView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB405D92DA394BC88BFADB21 /* GHUnitIOSView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		951DD03744F94DCD9E1C7CC7 /* GHUnitIOSTestViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AC149AF9219A4EE591263970 /* GHUnitIOSTestViewController.h */; };
-		9B8D8A59AB9C4F04B28758AA /* GHImageDiffView.m in Sources */ = {isa = PBXBuildFile; fileRef = F798B92449B8433FB1483B6D /* GHImageDiffView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		9BA55E4F158A4602AFBB848E /* GSListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A967F050DC846E4BBEFB67C /* GSListItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		9CFD03BF07E84A62836E6E09 /* GSComparableVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = CD656101D5EF4FF6A85E09E7 /* GSComparableVersion.h */; };
-		A05B4A335CB54306B79146C5 /* GSComparableVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 614C9CED66864A58A4117F7A /* GSComparableVersion.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		A1AE035913AE4D61AEE81B97 /* GHTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A2CBC04714271BEEE04AD /* GHTestSuite.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		A392BD4F1FB846E7B9E9F39B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB5015060274CACA2FE9A4D /* Foundation.framework */; };
-		A3AE9DF3E8A44C2698807717 /* GHUnitIOSTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B7EC05510647AAA757F772 /* GHUnitIOSTableViewDataSource.h */; };
-		A6765462196F4ED5B40D325B /* GHUnitIOSView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E7BF8D424514434BB3BEAD6 /* GHUnitIOSView.h */; };
-		A99530755BBB4DB8BB61AA57 /* GSIntegerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F370BFABCBB4D58A2E13BCD /* GSIntegerItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		ACA04D92B51E4E66B86933F6 /* GHTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024EBF6B6CF426A872150A8 /* GHTest.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		B14532CABF9247EFBC82CD0D /* GHUnitIOSTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241EC398BDB34C65B96B59BD /* GHUnitIOSTestViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		B1F4BB79B9A54A94A81365E8 /* GHTestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF6D0D6011D43E1B0C22FFB /* GHTestOperation.h */; };
-		B6C9E251D16F477C89065AF9 /* NSException+GHTestFailureExceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CC5BCEC78841EDAFB26EBB /* NSException+GHTestFailureExceptions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		B7A98B2A924549B3B0F43331 /* libPods-GSVersionComparator-GHUnit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A450F5EE1DF44DD882F95FD /* libPods-GSVersionComparator-GHUnit.a */; };
-		B9774B8F0CAB4BDC8763EEA5 /* GHTestGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = AA20604956FE4C4680643473 /* GHTestGroup.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		B9BBCEA9DE0D4762990B8AA1 /* GTMNSString+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 4769EF521548447C832048BA /* GTMNSString+XML.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		BA27AF4113C148ADBEF8D7CA /* NSString+GSVersionComparator.h in Headers */ = {isa = PBXBuildFile; fileRef = A220C37A5B8941E7B7DFC89C /* NSString+GSVersionComparator.h */; };
-		BBA0D3DC327A4248AE467E48 /* GHTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E782812C2FBF486093F60B0D /* GHTestViewModel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		BBB8782627304344892419B3 /* NSValue+GHValueFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 227A9FD1377344CAB08078E2 /* NSValue+GHValueFormatter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		C0D892293BCF4CBABFD41189 /* GHMockNSHTTPURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D13123B05CFC42D39FF29A68 /* GHMockNSHTTPURLResponse.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		D0DCFF515EC549319DFB299C /* GHTestMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A1201D726894021A23D94DD /* GHTestMacros.h */; };
-		D2259D3DDE334BAEA2B818E0 /* GHTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F25771150734E9CAF7C00D2 /* GHTesting.h */; };
-		D36EB89C9BA54653BB685982 /* GHTestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 51633C65E691430097BA155A /* GHTestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		D63CFBA7419340789727C35F /* GHAsyncTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0281091B8A35414D9C01CECC /* GHAsyncTestCase.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		DBC94C455F584085843DB1EA /* GHUnitIPhoneAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AF47F45CDCE48A7960A27A4 /* GHUnitIPhoneAppDelegate.h */; };
-		DD0A810BF42148EC812E000B /* GHAsyncTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F10991020747B5A59C361A /* GHAsyncTestCase.h */; };
-		DDCBB265D71F475A9F79DF3A /* GHMockNSURLConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 475A6EC6F9FB481ABD246560 /* GHMockNSURLConnection.h */; };
-		E08C5DCEBFAF4E96A0D552C6 /* GSItem.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC5D80066114D078FDFDD6A /* GSItem.h */; };
-		E153371E80CF4A87ACB7F658 /* GTMObjC2Runtime.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA3223A3D994D93B4489138 /* GTMObjC2Runtime.h */; };
-		E445AA8BB3DF4A8CA7597EB2 /* GHUnitIOSTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1136A10702AD452E90CB3EB2 /* GHUnitIOSTableViewDataSource.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		E68F7DF334A84F828F83F55C /* GSStringItem.h in Headers */ = {isa = PBXBuildFile; fileRef = E93CC483704F45569A65A929 /* GSStringItem.h */; };
-		E781375615004AB986C2B626 /* GHMockNSHTTPURLResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = EAF46F3ED26C4B3A83F13449 /* GHMockNSHTTPURLResponse.h */; };
-		EBBDD58FB2884E8781238CFB /* GHViewTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CECA6690054A4F872F6876 /* GHViewTestCase.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		ED288A45F12142B9BBE97DCB /* GHUnitIOSTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EE914086F84108A85B0261 /* GHUnitIOSTestView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		F04A4585231B4A3E808F00EF /* GSIntegerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = DD18A772A5BF47B4BC50ABA8 /* GSIntegerItem.h */; };
-		F61582EC06564DA6AF6211C5 /* NSException+GHTestFailureExceptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 814B762001B8454EB14CCEBC /* NSException+GHTestFailureExceptions.h */; };
-		FC200F1AE1A0440F824CE1E6 /* GSItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1540FA97BF204E32A5AAEA74 /* GSItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		00F204027AB944E0B6E287C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5395ADED1847779DD807D1 /* Foundation.framework */; };
+		04C8599F7C3F4111808D17C4 /* GSComparableVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 973B78E81EF34A579CAF7637 /* GSComparableVersion.h */; };
+		06F8305A91554B0C9CB521A9 /* GSItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E03DBE1367470DBE7DA6F5 /* GSItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		1363B5D40FBA4C22A6F86D7A /* GSListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A55110F9E9C46F5A30E1EC6 /* GSListItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		227DD25BA3964908A67B2D38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5395ADED1847779DD807D1 /* Foundation.framework */; };
+		4A0377C0708A4D26958BCC70 /* GSIntegerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 8778DD3210EC456988213EAD /* GSIntegerItem.h */; };
+		4C91B9B0CC934CC2B6F1EB81 /* GSStringItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CDBDD7B7234C0DB78AE560 /* GSStringItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		4E75CACBCFB449449DE1F87D /* GSStringItem.h in Headers */ = {isa = PBXBuildFile; fileRef = B5217A4A804B4ADD8D85428C /* GSStringItem.h */; };
+		5FF194946DF745DE80FBA86E /* NSString+GSVersionComparator.h in Headers */ = {isa = PBXBuildFile; fileRef = A68821AF7BCC4833BDFB8340 /* NSString+GSVersionComparator.h */; };
+		65620B513BF44E45B95294EE /* Pods-GSVersionComparator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB50849F6114B3588D74D01 /* Pods-GSVersionComparator-dummy.m */; };
+		6A521D5A82DD4E81A4CBD1AE /* GSItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0947AA3409DD4F9D8DF63B84 /* GSItem.h */; };
+		83AAE378BA72485A9DD66AB7 /* GSComparableVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0281C543C0B44E16864CF27C /* GSComparableVersion.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		B7810C1E47F14AA8B442AE1B /* Pods-GSVersionComparator-GSVersionComparator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB3A29E1F77413ABA17F744 /* Pods-GSVersionComparator-GSVersionComparator-dummy.m */; };
+		C6D5DAA69E904D1FB033FC2D /* NSString+GSVersionComparator.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DBFA07DA754B2B980046C9 /* NSString+GSVersionComparator.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DDFEDC803950446F8DF8426F /* GSListItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FB6DA11337341D99B5E6CB6 /* GSListItem.h */; };
+		DE599427938B4EA4B4E76496 /* libPods-GSVersionComparator-GSVersionComparator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1A933FAE6C4655ACD6A5A7 /* libPods-GSVersionComparator-GSVersionComparator.a */; };
+		F9321CDFFC1D473BB97682BC /* GSIntegerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC11354081246AC8FD330A3 /* GSIntegerItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1AECA50B9EB54B14AB889403 /* PBXContainerItemProxy */ = {
+		D669C26504F2498BB233741D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 40328C419D9E47DB8FEAB3FB /* Project object */;
+			containerPortal = A8BB0F5BC4BE427FB39E9467 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3CEF0E454364462883EC9F0E;
+			remoteGlobalIDString = 8D3766487E934275982CC543;
 			remoteInfo = "Pods-GSVersionComparator-GSVersionComparator";
-		};
-		CD087DD810164080B2B3B9A7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 40328C419D9E47DB8FEAB3FB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 785516BD86B84470AF236E08;
-			remoteInfo = "Pods-GSVersionComparator-GHUnit";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00F3914CBB7A4523ACEB0EBD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		01CECA6690054A4F872F6876 /* GHViewTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHViewTestCase.m; path = "Classes-iOS/GHViewTestCase.m"; sourceTree = "<group>"; };
-		023FE7D5D6CB4F588FE10665 /* GTMNSString+XML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+XML.h"; path = "Libraries/GTM/Foundation/GTMNSString+XML.h"; sourceTree = "<group>"; };
-		0281091B8A35414D9C01CECC /* GHAsyncTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHAsyncTestCase.m; path = Classes/GHAsyncTestCase.m; sourceTree = "<group>"; };
-		053AB8BC5AE44A1990A9A621 /* GHTestRunner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHTestRunner.m; path = Classes/GHTest/GHTestRunner.m; sourceTree = "<group>"; };
-		0DCDA610815745C29BF366AE /* GHTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHTestCase.m; path = Classes/GHTestCase.m; sourceTree = "<group>"; };
-		0DF6D0D6011D43E1B0C22FFB /* GHTestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHTestOperation.h; path = Classes/GHTest/GHTestOperation.h; sourceTree = "<group>"; };
-		1136A10702AD452E90CB3EB2 /* GHUnitIOSTableViewDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHUnitIOSTableViewDataSource.m; path = "Classes-iOS/GHUnitIOSTableViewDataSource.m"; sourceTree = "<group>"; };
-		1540FA97BF204E32A5AAEA74 /* GSItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSItem.m; path = Pod/Classes/GSItem.m; sourceTree = "<group>"; };
-		1722E09E8016490D8D575EF0 /* Pods-GSVersionComparator-GHUnit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSVersionComparator-GHUnit.xcconfig"; sourceTree = "<group>"; };
-		179F537F36F94A00ACC8813B /* libPods-GSVersionComparator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GSVersionComparator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B41F1CAC1D74988AD8E5FF5 /* GHUnitIOSViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHUnitIOSViewController.h; path = "Classes-iOS/GHUnitIOSViewController.h"; sourceTree = "<group>"; };
-		1D209E4368C34D5EB5591BAD /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMDefines.h; path = Libraries/GTM/GTMDefines.h; sourceTree = "<group>"; };
-		1E3A2CBC04714271BEEE04AD /* GHTestSuite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHTestSuite.m; path = Classes/GHTest/GHTestSuite.m; sourceTree = "<group>"; };
-		1FA3223A3D994D93B4489138 /* GTMObjC2Runtime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMObjC2Runtime.h; path = Libraries/GTM/Foundation/GTMObjC2Runtime.h; sourceTree = "<group>"; };
-		227A9FD1377344CAB08078E2 /* NSValue+GHValueFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+GHValueFormatter.m"; path = "Classes/GHTest/NSValue+GHValueFormatter.m"; sourceTree = "<group>"; };
-		241EC398BDB34C65B96B59BD /* GHUnitIOSTestViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHUnitIOSTestViewController.m; path = "Classes-iOS/GHUnitIOSTestViewController.m"; sourceTree = "<group>"; };
-		24F971698DF542A98F1DB91E /* GHUIImageViewControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHUIImageViewControl.m; path = "Classes-iOS/GHUIImageViewControl.m"; sourceTree = "<group>"; };
-		285ADD943A0948349B7AC493 /* Pods-GSVersionComparator-GHUnit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSVersionComparator-GHUnit-Private.xcconfig"; sourceTree = "<group>"; };
-		2EC3C01FBD3841B4BC983A70 /* GHTestRunner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHTestRunner.h; path = Classes/GHTest/GHTestRunner.h; sourceTree = "<group>"; };
-		2FF77661B203427EAA0867AE /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		36674AC57A704FBAAF52F770 /* GHTestUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHTestUtils.h; path = Classes/GHTestUtils.h; sourceTree = "<group>"; };
-		36F10991020747B5A59C361A /* GHAsyncTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHAsyncTestCase.h; path = Classes/GHAsyncTestCase.h; sourceTree = "<group>"; };
-		3921499300154F019E3F1C4E /* GHTestGroup+JUnitXML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GHTestGroup+JUnitXML.h"; path = "Classes/GHTest/GHTestGroup+JUnitXML.h"; sourceTree = "<group>"; };
-		393F6BE759704752AD34543F /* Pods-GSVersionComparator-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GSVersionComparator-environment.h"; sourceTree = "<group>"; };
-		3A22F6FCDD994097B7CEF137 /* GHTestUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHTestUtils.m; path = Classes/GHTestUtils.m; sourceTree = "<group>"; };
-		3F25771150734E9CAF7C00D2 /* GHTesting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHTesting.h; path = Classes/GHTest/GHTesting.h; sourceTree = "<group>"; };
-		3F370BFABCBB4D58A2E13BCD /* GSIntegerItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSIntegerItem.m; path = Pod/Classes/GSIntegerItem.m; sourceTree = "<group>"; };
-		40AC82BFDF604215A75C92FC /* GHUnitIOSAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHUnitIOSAppDelegate.h; path = "Classes-iOS/GHUnitIOSAppDelegate.h"; sourceTree = "<group>"; };
-		41B2CF9BC3FD417099E8CAA4 /* Pods-GSVersionComparator-GHUnit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GSVersionComparator-GHUnit-dummy.m"; sourceTree = "<group>"; };
-		42442E85EC1845E29BD0A279 /* GHTest+JUnitXML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GHTest+JUnitXML.h"; path = "Classes/GHTest/GHTest+JUnitXML.h"; sourceTree = "<group>"; };
-		475A6EC6F9FB481ABD246560 /* GHMockNSURLConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHMockNSURLConnection.h; path = Classes/Mock/GHMockNSURLConnection.h; sourceTree = "<group>"; };
-		4769EF521548447C832048BA /* GTMNSString+XML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+XML.m"; path = "Libraries/GTM/Foundation/GTMNSString+XML.m"; sourceTree = "<group>"; };
-		4A0B200F5EED4A71AE6351F8 /* GHUnitIOSTestView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHUnitIOSTestView.h; path = "Classes-iOS/GHUnitIOSTestView.h"; sourceTree = "<group>"; };
-		51633C65E691430097BA155A /* GHTestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHTestOperation.m; path = Classes/GHTest/GHTestOperation.m; sourceTree = "<group>"; };
-		5A450F5EE1DF44DD882F95FD /* libPods-GSVersionComparator-GHUnit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GSVersionComparator-GHUnit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C3FF8977A6547028D8E64DB /* GHUIImageViewControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHUIImageViewControl.h; path = "Classes-iOS/GHUIImageViewControl.h"; sourceTree = "<group>"; };
-		5D0CF9E9AF5F459BBBCF0711 /* Pods-GSVersionComparator-GSVersionComparator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSVersionComparator-GSVersionComparator.xcconfig"; sourceTree = "<group>"; };
-		602F4AA3006648C29B394E76 /* GHTesting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHTesting.m; path = Classes/GHTest/GHTesting.m; sourceTree = "<group>"; };
-		614C9CED66864A58A4117F7A /* GSComparableVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSComparableVersion.m; path = Pod/Classes/GSComparableVersion.m; sourceTree = "<group>"; };
-		6883EE28FB5F4DDB9E6686CA /* Pods-GSVersionComparator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GSVersionComparator-dummy.m"; sourceTree = "<group>"; };
-		68A0A291B761420FB8B02E6A /* GHTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHTestCase.h; path = Classes/GHTestCase.h; sourceTree = "<group>"; };
-		6E7BF8D424514434BB3BEAD6 /* GHUnitIOSView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHUnitIOSView.h; path = "Classes-iOS/GHUnitIOSView.h"; sourceTree = "<group>"; };
-		6F50B71ACBA44A0294C0A6DB /* GHUnitIOSAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHUnitIOSAppDelegate.m; path = "Classes-iOS/GHUnitIOSAppDelegate.m"; sourceTree = "<group>"; };
-		722B1BFEA0B244678B3541A3 /* GHTestViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHTestViewModel.h; path = Classes/SharedUI/GHTestViewModel.h; sourceTree = "<group>"; };
-		72EE914086F84108A85B0261 /* GHUnitIOSTestView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHUnitIOSTestView.m; path = "Classes-iOS/GHUnitIOSTestView.m"; sourceTree = "<group>"; };
-		74F280D72BF34FA9B99F9B92 /* Pods-GSVersionComparator-GHUnit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GSVersionComparator-GHUnit-prefix.pch"; sourceTree = "<group>"; };
-		7AF47F45CDCE48A7960A27A4 /* GHUnitIPhoneAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHUnitIPhoneAppDelegate.h; path = "Classes-iOS/GHUnitIPhoneAppDelegate.h"; sourceTree = "<group>"; };
-		7FD9F3F78A944F1A8AF39087 /* libPods-GSVersionComparator-GSVersionComparator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GSVersionComparator-GSVersionComparator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8024EBF6B6CF426A872150A8 /* GHTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHTest.m; path = Classes/GHTest/GHTest.m; sourceTree = "<group>"; };
-		814B762001B8454EB14CCEBC /* NSException+GHTestFailureExceptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSException+GHTestFailureExceptions.h"; path = "Classes/GHTest/NSException+GHTestFailureExceptions.h"; sourceTree = "<group>"; };
-		84BC46565B454BB28DBD1664 /* GSListItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSListItem.h; path = Pod/Classes/GSListItem.h; sourceTree = "<group>"; };
-		88B7EC05510647AAA757F772 /* GHUnitIOSTableViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHUnitIOSTableViewDataSource.h; path = "Classes-iOS/GHUnitIOSTableViewDataSource.h"; sourceTree = "<group>"; };
-		909B5FDB0DB343A49667FA11 /* Pods-GSVersionComparator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GSVersionComparator-acknowledgements.plist"; sourceTree = "<group>"; };
-		9A1201D726894021A23D94DD /* GHTestMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHTestMacros.h; path = Classes/GHTestMacros.h; sourceTree = "<group>"; };
-		9A967F050DC846E4BBEFB67C /* GSListItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSListItem.m; path = Pod/Classes/GSListItem.m; sourceTree = "<group>"; };
-		A1BE201010CF4D35B1489B12 /* Pods-GSVersionComparator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GSVersionComparator-resources.sh"; sourceTree = "<group>"; };
-		A220C37A5B8941E7B7DFC89C /* NSString+GSVersionComparator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+GSVersionComparator.h"; path = "Pod/Classes/NSString+GSVersionComparator.h"; sourceTree = "<group>"; };
-		AA20604956FE4C4680643473 /* GHTestGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHTestGroup.m; path = Classes/GHTest/GHTestGroup.m; sourceTree = "<group>"; };
-		AB405D92DA394BC88BFADB21 /* GHUnitIOSView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHUnitIOSView.m; path = "Classes-iOS/GHUnitIOSView.m"; sourceTree = "<group>"; };
-		AC149AF9219A4EE591263970 /* GHUnitIOSTestViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHUnitIOSTestViewController.h; path = "Classes-iOS/GHUnitIOSTestViewController.h"; sourceTree = "<group>"; };
-		AF5F49FD9A6741BF9F87A84C /* GTMObjC2Runtime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMObjC2Runtime.m; path = Libraries/GTM/Foundation/GTMObjC2Runtime.m; sourceTree = "<group>"; };
-		B1AC20A455444232A0E3CAD6 /* Pods-GSVersionComparator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSVersionComparator.xcconfig"; sourceTree = "<group>"; };
-		B506A3437490467CAA6CD0AF /* GHUnitIOSViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHUnitIOSViewController.m; path = "Classes-iOS/GHUnitIOSViewController.m"; sourceTree = "<group>"; };
-		BBC47B51BDD342728B966278 /* Pods-GSVersionComparator-GSVersionComparator-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSVersionComparator-GSVersionComparator-Private.xcconfig"; sourceTree = "<group>"; };
-		BEE9190C261C4543AD412A2A /* NSValue+GHValueFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+GHValueFormatter.h"; path = "Classes/GHTest/NSValue+GHValueFormatter.h"; sourceTree = "<group>"; };
-		BF333BDE54CE4D579BBDC8E0 /* GHUnitIPhoneAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHUnitIPhoneAppDelegate.m; path = "Classes-iOS/GHUnitIPhoneAppDelegate.m"; sourceTree = "<group>"; };
-		C0ABA0D51C5E414D8E0D550E /* Pods-GSVersionComparator-GSVersionComparator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GSVersionComparator-GSVersionComparator-dummy.m"; sourceTree = "<group>"; };
-		C221A2150029409E844EF165 /* Pods-GSVersionComparator-GSVersionComparator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GSVersionComparator-GSVersionComparator-prefix.pch"; sourceTree = "<group>"; };
-		C31BA013D4CD4C23A85DE314 /* GHTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHTest.h; path = Classes/GHTest/GHTest.h; sourceTree = "<group>"; };
-		C41B925BE93E4BAC88E5711C /* GHTestGroup+JUnitXML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GHTestGroup+JUnitXML.m"; path = "Classes/GHTest/GHTestGroup+JUnitXML.m"; sourceTree = "<group>"; };
-		C6894E1C4299422CA30216CE /* GHMockNSURLConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHMockNSURLConnection.m; path = Classes/Mock/GHMockNSURLConnection.m; sourceTree = "<group>"; };
-		C80B0BEBF7CC47FD9211D89F /* Pods-GSVersionComparator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GSVersionComparator-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CAC5D80066114D078FDFDD6A /* GSItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSItem.h; path = Pod/Classes/GSItem.h; sourceTree = "<group>"; };
-		CD3DA30C459E48AC9A0DA859 /* GHTestSuite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHTestSuite.h; path = Classes/GHTest/GHTestSuite.h; sourceTree = "<group>"; };
-		CD656101D5EF4FF6A85E09E7 /* GSComparableVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSComparableVersion.h; path = Pod/Classes/GSComparableVersion.h; sourceTree = "<group>"; };
-		D13123B05CFC42D39FF29A68 /* GHMockNSHTTPURLResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHMockNSHTTPURLResponse.m; path = Classes/Mock/GHMockNSHTTPURLResponse.m; sourceTree = "<group>"; };
-		DAB5015060274CACA2FE9A4D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DB8D2311DAD040F7AEA95736 /* GHViewTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHViewTestCase.h; path = "Classes-iOS/GHViewTestCase.h"; sourceTree = "<group>"; };
-		DD18A772A5BF47B4BC50ABA8 /* GSIntegerItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSIntegerItem.h; path = Pod/Classes/GSIntegerItem.h; sourceTree = "<group>"; };
-		E07FC70FF5DC49C48A30B5A3 /* GHTestGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHTestGroup.h; path = Classes/GHTest/GHTestGroup.h; sourceTree = "<group>"; };
-		E0CD7570801A439384149D6A /* GHImageDiffView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHImageDiffView.h; path = "Classes-iOS/GHImageDiffView.h"; sourceTree = "<group>"; };
-		E1E86AB8D79A4245900E5277 /* NSString+GSVersionComparator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+GSVersionComparator.m"; path = "Pod/Classes/NSString+GSVersionComparator.m"; sourceTree = "<group>"; };
-		E67F16ED27C14B1093518A1A /* GHTest+JUnitXML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GHTest+JUnitXML.m"; path = "Classes/GHTest/GHTest+JUnitXML.m"; sourceTree = "<group>"; };
-		E782812C2FBF486093F60B0D /* GHTestViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHTestViewModel.m; path = Classes/SharedUI/GHTestViewModel.m; sourceTree = "<group>"; };
-		E8919D8E440A4E4FBD473529 /* GHUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHUnit.h; path = Classes/GHUnit.h; sourceTree = "<group>"; };
-		E93CC483704F45569A65A929 /* GSStringItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSStringItem.h; path = Pod/Classes/GSStringItem.h; sourceTree = "<group>"; };
-		EAF46F3ED26C4B3A83F13449 /* GHMockNSHTTPURLResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHMockNSHTTPURLResponse.h; path = Classes/Mock/GHMockNSHTTPURLResponse.h; sourceTree = "<group>"; };
-		F1196DDC25BB42DBA1A9FA20 /* GSStringItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSStringItem.m; path = Pod/Classes/GSStringItem.m; sourceTree = "<group>"; };
-		F3CC5BCEC78841EDAFB26EBB /* NSException+GHTestFailureExceptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSException+GHTestFailureExceptions.m"; path = "Classes/GHTest/NSException+GHTestFailureExceptions.m"; sourceTree = "<group>"; };
-		F798B92449B8433FB1483B6D /* GHImageDiffView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHImageDiffView.m; path = "Classes-iOS/GHImageDiffView.m"; sourceTree = "<group>"; };
+		0281C543C0B44E16864CF27C /* GSComparableVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSComparableVersion.m; path = Pod/Classes/GSComparableVersion.m; sourceTree = "<group>"; };
+		0947AA3409DD4F9D8DF63B84 /* GSItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSItem.h; path = Pod/Classes/GSItem.h; sourceTree = "<group>"; };
+		0D5395ADED1847779DD807D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2EB3A29E1F77413ABA17F744 /* Pods-GSVersionComparator-GSVersionComparator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GSVersionComparator-GSVersionComparator-dummy.m"; sourceTree = "<group>"; };
+		30389B5D1A914E6DBE4292EC /* Pods-GSVersionComparator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GSVersionComparator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3C9B16A4DE7F4FA5846770CB /* Pods-GSVersionComparator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSVersionComparator.xcconfig"; sourceTree = "<group>"; };
+		43E03DBE1367470DBE7DA6F5 /* GSItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSItem.m; path = Pod/Classes/GSItem.m; sourceTree = "<group>"; };
+		4C1A933FAE6C4655ACD6A5A7 /* libPods-GSVersionComparator-GSVersionComparator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GSVersionComparator-GSVersionComparator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DB50849F6114B3588D74D01 /* Pods-GSVersionComparator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GSVersionComparator-dummy.m"; sourceTree = "<group>"; };
+		7A55110F9E9C46F5A30E1EC6 /* GSListItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSListItem.m; path = Pod/Classes/GSListItem.m; sourceTree = "<group>"; };
+		7FB6DA11337341D99B5E6CB6 /* GSListItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSListItem.h; path = Pod/Classes/GSListItem.h; sourceTree = "<group>"; };
+		8778DD3210EC456988213EAD /* GSIntegerItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSIntegerItem.h; path = Pod/Classes/GSIntegerItem.h; sourceTree = "<group>"; };
+		8A315BBF82C84AC393E0CC55 /* Pods-GSVersionComparator-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GSVersionComparator-environment.h"; sourceTree = "<group>"; };
+		91ED4F9612D24CAD85345BDE /* Pods-GSVersionComparator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GSVersionComparator-acknowledgements.plist"; sourceTree = "<group>"; };
+		95A10387923C4F84A5E84398 /* Pods-GSVersionComparator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GSVersionComparator-resources.sh"; sourceTree = "<group>"; };
+		973B78E81EF34A579CAF7637 /* GSComparableVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSComparableVersion.h; path = Pod/Classes/GSComparableVersion.h; sourceTree = "<group>"; };
+		A68821AF7BCC4833BDFB8340 /* NSString+GSVersionComparator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+GSVersionComparator.h"; path = "Pod/Classes/NSString+GSVersionComparator.h"; sourceTree = "<group>"; };
+		ABC11354081246AC8FD330A3 /* GSIntegerItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSIntegerItem.m; path = Pod/Classes/GSIntegerItem.m; sourceTree = "<group>"; };
+		B5217A4A804B4ADD8D85428C /* GSStringItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSStringItem.h; path = Pod/Classes/GSStringItem.h; sourceTree = "<group>"; };
+		BAFB8FBC922C4902BE3DE2C7 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB39E21077A74B1491A71FE2 /* libPods-GSVersionComparator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GSVersionComparator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C41F0A4746B546E0A5454FE0 /* Pods-GSVersionComparator-GSVersionComparator-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSVersionComparator-GSVersionComparator-Private.xcconfig"; sourceTree = "<group>"; };
+		D2CC8C4E12764FBDA243006B /* Pods-GSVersionComparator-GSVersionComparator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSVersionComparator-GSVersionComparator.xcconfig"; sourceTree = "<group>"; };
+		E3DBFA07DA754B2B980046C9 /* NSString+GSVersionComparator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+GSVersionComparator.m"; path = "Pod/Classes/NSString+GSVersionComparator.m"; sourceTree = "<group>"; };
+		E7CDBDD7B7234C0DB78AE560 /* GSStringItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSStringItem.m; path = Pod/Classes/GSStringItem.m; sourceTree = "<group>"; };
+		F932495F85E14C76BDFA8983 /* Pods-GSVersionComparator-GSVersionComparator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GSVersionComparator-GSVersionComparator-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		804440AC8E2B4B90967C821C /* Frameworks */ = {
+		C5899B29BD3546A09D1C8CD1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A392BD4F1FB846E7B9E9F39B /* Foundation.framework in Frameworks */,
-				B7A98B2A924549B3B0F43331 /* libPods-GSVersionComparator-GHUnit.a in Frameworks */,
-				545E793882324315B1136E14 /* libPods-GSVersionComparator-GSVersionComparator.a in Frameworks */,
+				227DD25BA3964908A67B2D38 /* Foundation.framework in Frameworks */,
+				DE599427938B4EA4B4E76496 /* libPods-GSVersionComparator-GSVersionComparator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84F0F87E3BDD4130A294D6D6 /* Frameworks */ = {
+		E032CF219DDC4D648B9B2A58 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				326A32A0D2D348C4AC5F5FCC /* Foundation.framework in Frameworks */,
-				50007A3D7B214F5D85C2BB35 /* QuartzCore.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D81F18C7BE114EED946A13F7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				011FCB3B98FE4256AD041F25 /* Foundation.framework in Frameworks */,
+				00F204027AB944E0B6E287C8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08D39715B1B740C790D6BB26 /* Pods-GSVersionComparator */ = {
+		0ABEDCE4A6164C69A088B090 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B1AC20A455444232A0E3CAD6 /* Pods-GSVersionComparator.xcconfig */,
-				C80B0BEBF7CC47FD9211D89F /* Pods-GSVersionComparator-acknowledgements.markdown */,
-				909B5FDB0DB343A49667FA11 /* Pods-GSVersionComparator-acknowledgements.plist */,
-				6883EE28FB5F4DDB9E6686CA /* Pods-GSVersionComparator-dummy.m */,
-				393F6BE759704752AD34543F /* Pods-GSVersionComparator-environment.h */,
-				A1BE201010CF4D35B1489B12 /* Pods-GSVersionComparator-resources.sh */,
-			);
-			name = "Pods-GSVersionComparator";
-			sourceTree = "<group>";
-		};
-		11B3ED40CDEC4B5D9CFC8077 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D4F65DD0D48B4E6891C309C5 /* iOS */,
+				1654AB8ACC294A2F93631F56 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		284E7E5286574DB38E99A28B = {
+		1654AB8ACC294A2F93631F56 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				2FF77661B203427EAA0867AE /* Podfile */,
-				A9D348010B5A4E229BBE364E /* Development Pods */,
-				11B3ED40CDEC4B5D9CFC8077 /* Frameworks */,
-				BB9D10A4C66C4CAEB2986DB2 /* Pods */,
-				E20875E88EBE4E4BA0180B4A /* Products */,
-				3C55626780694214B963F032 /* Targets Support Files */,
+				0D5395ADED1847779DD807D1 /* Foundation.framework */,
 			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		3C55626780694214B963F032 /* Targets Support Files */ = {
+		295BF69E631C44CA95895F0A /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				08D39715B1B740C790D6BB26 /* Pods-GSVersionComparator */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		489BBA8689B0441FAFF09519 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5D0CF9E9AF5F459BBBCF0711 /* Pods-GSVersionComparator-GSVersionComparator.xcconfig */,
-				BBC47B51BDD342728B966278 /* Pods-GSVersionComparator-GSVersionComparator-Private.xcconfig */,
-				C0ABA0D51C5E414D8E0D550E /* Pods-GSVersionComparator-GSVersionComparator-dummy.m */,
-				C221A2150029409E844EF165 /* Pods-GSVersionComparator-GSVersionComparator-prefix.pch */,
-			);
-			name = "Support Files";
-			sourceTree = SOURCE_ROOT;
-		};
-		A9D348010B5A4E229BBE364E /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D267A9A2A5664001BFD4C4F5 /* GSVersionComparator */,
+				EFC280B6900E4CADBE8194B8 /* GSVersionComparator */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		B26214FB8A254A24A7345C78 /* GHUnit */ = {
+		2DBC00E6A8204E55BEBF408D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				36F10991020747B5A59C361A /* GHAsyncTestCase.h */,
-				0281091B8A35414D9C01CECC /* GHAsyncTestCase.m */,
-				E0CD7570801A439384149D6A /* GHImageDiffView.h */,
-				F798B92449B8433FB1483B6D /* GHImageDiffView.m */,
-				EAF46F3ED26C4B3A83F13449 /* GHMockNSHTTPURLResponse.h */,
-				D13123B05CFC42D39FF29A68 /* GHMockNSHTTPURLResponse.m */,
-				475A6EC6F9FB481ABD246560 /* GHMockNSURLConnection.h */,
-				C6894E1C4299422CA30216CE /* GHMockNSURLConnection.m */,
-				C31BA013D4CD4C23A85DE314 /* GHTest.h */,
-				8024EBF6B6CF426A872150A8 /* GHTest.m */,
-				42442E85EC1845E29BD0A279 /* GHTest+JUnitXML.h */,
-				E67F16ED27C14B1093518A1A /* GHTest+JUnitXML.m */,
-				68A0A291B761420FB8B02E6A /* GHTestCase.h */,
-				0DCDA610815745C29BF366AE /* GHTestCase.m */,
-				E07FC70FF5DC49C48A30B5A3 /* GHTestGroup.h */,
-				AA20604956FE4C4680643473 /* GHTestGroup.m */,
-				3921499300154F019E3F1C4E /* GHTestGroup+JUnitXML.h */,
-				C41B925BE93E4BAC88E5711C /* GHTestGroup+JUnitXML.m */,
-				9A1201D726894021A23D94DD /* GHTestMacros.h */,
-				0DF6D0D6011D43E1B0C22FFB /* GHTestOperation.h */,
-				51633C65E691430097BA155A /* GHTestOperation.m */,
-				2EC3C01FBD3841B4BC983A70 /* GHTestRunner.h */,
-				053AB8BC5AE44A1990A9A621 /* GHTestRunner.m */,
-				CD3DA30C459E48AC9A0DA859 /* GHTestSuite.h */,
-				1E3A2CBC04714271BEEE04AD /* GHTestSuite.m */,
-				36674AC57A704FBAAF52F770 /* GHTestUtils.h */,
-				3A22F6FCDD994097B7CEF137 /* GHTestUtils.m */,
-				722B1BFEA0B244678B3541A3 /* GHTestViewModel.h */,
-				E782812C2FBF486093F60B0D /* GHTestViewModel.m */,
-				3F25771150734E9CAF7C00D2 /* GHTesting.h */,
-				602F4AA3006648C29B394E76 /* GHTesting.m */,
-				5C3FF8977A6547028D8E64DB /* GHUIImageViewControl.h */,
-				24F971698DF542A98F1DB91E /* GHUIImageViewControl.m */,
-				E8919D8E440A4E4FBD473529 /* GHUnit.h */,
-				40AC82BFDF604215A75C92FC /* GHUnitIOSAppDelegate.h */,
-				6F50B71ACBA44A0294C0A6DB /* GHUnitIOSAppDelegate.m */,
-				88B7EC05510647AAA757F772 /* GHUnitIOSTableViewDataSource.h */,
-				1136A10702AD452E90CB3EB2 /* GHUnitIOSTableViewDataSource.m */,
-				4A0B200F5EED4A71AE6351F8 /* GHUnitIOSTestView.h */,
-				72EE914086F84108A85B0261 /* GHUnitIOSTestView.m */,
-				AC149AF9219A4EE591263970 /* GHUnitIOSTestViewController.h */,
-				241EC398BDB34C65B96B59BD /* GHUnitIOSTestViewController.m */,
-				6E7BF8D424514434BB3BEAD6 /* GHUnitIOSView.h */,
-				AB405D92DA394BC88BFADB21 /* GHUnitIOSView.m */,
-				1B41F1CAC1D74988AD8E5FF5 /* GHUnitIOSViewController.h */,
-				B506A3437490467CAA6CD0AF /* GHUnitIOSViewController.m */,
-				7AF47F45CDCE48A7960A27A4 /* GHUnitIPhoneAppDelegate.h */,
-				BF333BDE54CE4D579BBDC8E0 /* GHUnitIPhoneAppDelegate.m */,
-				DB8D2311DAD040F7AEA95736 /* GHViewTestCase.h */,
-				01CECA6690054A4F872F6876 /* GHViewTestCase.m */,
-				1D209E4368C34D5EB5591BAD /* GTMDefines.h */,
-				023FE7D5D6CB4F588FE10665 /* GTMNSString+XML.h */,
-				4769EF521548447C832048BA /* GTMNSString+XML.m */,
-				1FA3223A3D994D93B4489138 /* GTMObjC2Runtime.h */,
-				AF5F49FD9A6741BF9F87A84C /* GTMObjC2Runtime.m */,
-				814B762001B8454EB14CCEBC /* NSException+GHTestFailureExceptions.h */,
-				F3CC5BCEC78841EDAFB26EBB /* NSException+GHTestFailureExceptions.m */,
-				BEE9190C261C4543AD412A2A /* NSValue+GHValueFormatter.h */,
-				227A9FD1377344CAB08078E2 /* NSValue+GHValueFormatter.m */,
-				DC21421C1E99444C9FBBBF4C /* Support Files */,
+				573F36C2995B455DA5356266 /* Pods-GSVersionComparator */,
 			);
-			name = GHUnit;
-			path = GHUnit;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BB9D10A4C66C4CAEB2986DB2 /* Pods */ = {
+		573F36C2995B455DA5356266 /* Pods-GSVersionComparator */ = {
 			isa = PBXGroup;
 			children = (
-				B26214FB8A254A24A7345C78 /* GHUnit */,
+				3C9B16A4DE7F4FA5846770CB /* Pods-GSVersionComparator.xcconfig */,
+				30389B5D1A914E6DBE4292EC /* Pods-GSVersionComparator-acknowledgements.markdown */,
+				91ED4F9612D24CAD85345BDE /* Pods-GSVersionComparator-acknowledgements.plist */,
+				6DB50849F6114B3588D74D01 /* Pods-GSVersionComparator-dummy.m */,
+				8A315BBF82C84AC393E0CC55 /* Pods-GSVersionComparator-environment.h */,
+				95A10387923C4F84A5E84398 /* Pods-GSVersionComparator-resources.sh */,
 			);
-			name = Pods;
+			name = "Pods-GSVersionComparator";
 			sourceTree = "<group>";
 		};
-		D267A9A2A5664001BFD4C4F5 /* GSVersionComparator */ = {
+		7BCC7969E3DF471CB9B7FD27 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CD656101D5EF4FF6A85E09E7 /* GSComparableVersion.h */,
-				614C9CED66864A58A4117F7A /* GSComparableVersion.m */,
-				DD18A772A5BF47B4BC50ABA8 /* GSIntegerItem.h */,
-				3F370BFABCBB4D58A2E13BCD /* GSIntegerItem.m */,
-				CAC5D80066114D078FDFDD6A /* GSItem.h */,
-				1540FA97BF204E32A5AAEA74 /* GSItem.m */,
-				84BC46565B454BB28DBD1664 /* GSListItem.h */,
-				9A967F050DC846E4BBEFB67C /* GSListItem.m */,
-				E93CC483704F45569A65A929 /* GSStringItem.h */,
-				F1196DDC25BB42DBA1A9FA20 /* GSStringItem.m */,
-				A220C37A5B8941E7B7DFC89C /* NSString+GSVersionComparator.h */,
-				E1E86AB8D79A4245900E5277 /* NSString+GSVersionComparator.m */,
-				489BBA8689B0441FAFF09519 /* Support Files */,
+				D2CC8C4E12764FBDA243006B /* Pods-GSVersionComparator-GSVersionComparator.xcconfig */,
+				C41F0A4746B546E0A5454FE0 /* Pods-GSVersionComparator-GSVersionComparator-Private.xcconfig */,
+				2EB3A29E1F77413ABA17F744 /* Pods-GSVersionComparator-GSVersionComparator-dummy.m */,
+				F932495F85E14C76BDFA8983 /* Pods-GSVersionComparator-GSVersionComparator-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		9559E33F53864C18BFC04BE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB39E21077A74B1491A71FE2 /* libPods-GSVersionComparator.a */,
+				4C1A933FAE6C4655ACD6A5A7 /* libPods-GSVersionComparator-GSVersionComparator.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A76B9B6FC8D45049D52D7F7 = {
+			isa = PBXGroup;
+			children = (
+				BAFB8FBC922C4902BE3DE2C7 /* Podfile */,
+				295BF69E631C44CA95895F0A /* Development Pods */,
+				0ABEDCE4A6164C69A088B090 /* Frameworks */,
+				9559E33F53864C18BFC04BE4 /* Products */,
+				2DBC00E6A8204E55BEBF408D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		EFC280B6900E4CADBE8194B8 /* GSVersionComparator */ = {
+			isa = PBXGroup;
+			children = (
+				973B78E81EF34A579CAF7637 /* GSComparableVersion.h */,
+				0281C543C0B44E16864CF27C /* GSComparableVersion.m */,
+				8778DD3210EC456988213EAD /* GSIntegerItem.h */,
+				ABC11354081246AC8FD330A3 /* GSIntegerItem.m */,
+				0947AA3409DD4F9D8DF63B84 /* GSItem.h */,
+				43E03DBE1367470DBE7DA6F5 /* GSItem.m */,
+				7FB6DA11337341D99B5E6CB6 /* GSListItem.h */,
+				7A55110F9E9C46F5A30E1EC6 /* GSListItem.m */,
+				B5217A4A804B4ADD8D85428C /* GSStringItem.h */,
+				E7CDBDD7B7234C0DB78AE560 /* GSStringItem.m */,
+				A68821AF7BCC4833BDFB8340 /* NSString+GSVersionComparator.h */,
+				E3DBFA07DA754B2B980046C9 /* NSString+GSVersionComparator.m */,
+				7BCC7969E3DF471CB9B7FD27 /* Support Files */,
 			);
 			name = GSVersionComparator;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		D4F65DD0D48B4E6891C309C5 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				DAB5015060274CACA2FE9A4D /* Foundation.framework */,
-				00F3914CBB7A4523ACEB0EBD /* QuartzCore.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		DC21421C1E99444C9FBBBF4C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1722E09E8016490D8D575EF0 /* Pods-GSVersionComparator-GHUnit.xcconfig */,
-				285ADD943A0948349B7AC493 /* Pods-GSVersionComparator-GHUnit-Private.xcconfig */,
-				41B2CF9BC3FD417099E8CAA4 /* Pods-GSVersionComparator-GHUnit-dummy.m */,
-				74F280D72BF34FA9B99F9B92 /* Pods-GSVersionComparator-GHUnit-prefix.pch */,
-			);
-			name = "Support Files";
-			sourceTree = SOURCE_ROOT;
-		};
-		E20875E88EBE4E4BA0180B4A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				179F537F36F94A00ACC8813B /* libPods-GSVersionComparator.a */,
-				5A450F5EE1DF44DD882F95FD /* libPods-GSVersionComparator-GHUnit.a */,
-				7FD9F3F78A944F1A8AF39087 /* libPods-GSVersionComparator-GSVersionComparator.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1B379B0713CB4C8997624734 /* Headers */ = {
+		8751D4DE0124456983174AD4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD0A810BF42148EC812E000B /* GHAsyncTestCase.h in Headers */,
-				0971CC477E15483080452010 /* GHImageDiffView.h in Headers */,
-				E781375615004AB986C2B626 /* GHMockNSHTTPURLResponse.h in Headers */,
-				DDCBB265D71F475A9F79DF3A /* GHMockNSURLConnection.h in Headers */,
-				10C3F42E0C9641348984DC59 /* GHTest+JUnitXML.h in Headers */,
-				8AD71A67E3A44FCEAB7588EF /* GHTest.h in Headers */,
-				6596CC6A0C4B40DB93D48135 /* GHTestCase.h in Headers */,
-				4E0F6435D71F4E2484BB09C0 /* GHTestGroup+JUnitXML.h in Headers */,
-				85A273EA3B3547D6AD9CDC7F /* GHTestGroup.h in Headers */,
-				D0DCFF515EC549319DFB299C /* GHTestMacros.h in Headers */,
-				B1F4BB79B9A54A94A81365E8 /* GHTestOperation.h in Headers */,
-				4411C1B08CAA4E829ABC6B38 /* GHTestRunner.h in Headers */,
-				8F12A832F14744B9A48BDDB0 /* GHTestSuite.h in Headers */,
-				02D8A1604CF642CAA6AB099C /* GHTestUtils.h in Headers */,
-				2FB5F190D186447F9318857F /* GHTestViewModel.h in Headers */,
-				D2259D3DDE334BAEA2B818E0 /* GHTesting.h in Headers */,
-				40F1CF602D2D476AB87AA22C /* GHUIImageViewControl.h in Headers */,
-				3947813B00924B82AE9B4239 /* GHUnit.h in Headers */,
-				4A2130C531704C99B4B235F1 /* GHUnitIOSAppDelegate.h in Headers */,
-				A3AE9DF3E8A44C2698807717 /* GHUnitIOSTableViewDataSource.h in Headers */,
-				466ABF1C0A39457A9462E530 /* GHUnitIOSTestView.h in Headers */,
-				951DD03744F94DCD9E1C7CC7 /* GHUnitIOSTestViewController.h in Headers */,
-				A6765462196F4ED5B40D325B /* GHUnitIOSView.h in Headers */,
-				203A792EAC754DF99F7AB47B /* GHUnitIOSViewController.h in Headers */,
-				DBC94C455F584085843DB1EA /* GHUnitIPhoneAppDelegate.h in Headers */,
-				43E26AE90275436C82160C17 /* GHViewTestCase.h in Headers */,
-				67883BF3DB0C4D3E96C36FAA /* GTMDefines.h in Headers */,
-				518D6C14C7A345CDBEF92D23 /* GTMNSString+XML.h in Headers */,
-				E153371E80CF4A87ACB7F658 /* GTMObjC2Runtime.h in Headers */,
-				F61582EC06564DA6AF6211C5 /* NSException+GHTestFailureExceptions.h in Headers */,
-				8171D7C38A164E4FB330B6EB /* NSValue+GHValueFormatter.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EA1D4603D2334E73A186E647 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9CFD03BF07E84A62836E6E09 /* GSComparableVersion.h in Headers */,
-				F04A4585231B4A3E808F00EF /* GSIntegerItem.h in Headers */,
-				E08C5DCEBFAF4E96A0D552C6 /* GSItem.h in Headers */,
-				70915CD1840E48BF80D36766 /* GSListItem.h in Headers */,
-				E68F7DF334A84F828F83F55C /* GSStringItem.h in Headers */,
-				BA27AF4113C148ADBEF8D7CA /* NSString+GSVersionComparator.h in Headers */,
+				04C8599F7C3F4111808D17C4 /* GSComparableVersion.h in Headers */,
+				4A0377C0708A4D26958BCC70 /* GSIntegerItem.h in Headers */,
+				6A521D5A82DD4E81A4CBD1AE /* GSItem.h in Headers */,
+				DDFEDC803950446F8DF8426F /* GSListItem.h in Headers */,
+				4E75CACBCFB449449DE1F87D /* GSStringItem.h in Headers */,
+				5FF194946DF745DE80FBA86E /* NSString+GSVersionComparator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3CEF0E454364462883EC9F0E /* Pods-GSVersionComparator-GSVersionComparator */ = {
+		5F12C78F93F54C959B1255C3 /* Pods-GSVersionComparator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 62578CF5257B41E4A040BD09 /* Build configuration list for PBXNativeTarget "Pods-GSVersionComparator-GSVersionComparator" */;
+			buildConfigurationList = 37F55608C49B485D90D5A8EB /* Build configuration list for PBXNativeTarget "Pods-GSVersionComparator" */;
 			buildPhases = (
-				C583F21188B047F79335E4DB /* Sources */,
-				D81F18C7BE114EED946A13F7 /* Frameworks */,
-				EA1D4603D2334E73A186E647 /* Headers */,
+				E370B190598C487DB696F5B8 /* Sources */,
+				C5899B29BD3546A09D1C8CD1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAA323E6032E49309F073846 /* PBXTargetDependency */,
+			);
+			name = "Pods-GSVersionComparator";
+			productName = "Pods-GSVersionComparator";
+			productReference = BB39E21077A74B1491A71FE2 /* libPods-GSVersionComparator.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8D3766487E934275982CC543 /* Pods-GSVersionComparator-GSVersionComparator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0318C7C4957A4AED88A8F2AC /* Build configuration list for PBXNativeTarget "Pods-GSVersionComparator-GSVersionComparator" */;
+			buildPhases = (
+				948162482EC74DECB59453AD /* Sources */,
+				E032CF219DDC4D648B9B2A58 /* Frameworks */,
+				8751D4DE0124456983174AD4 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -489,237 +233,72 @@
 			);
 			name = "Pods-GSVersionComparator-GSVersionComparator";
 			productName = "Pods-GSVersionComparator-GSVersionComparator";
-			productReference = 7FD9F3F78A944F1A8AF39087 /* libPods-GSVersionComparator-GSVersionComparator.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		65B92F06FF2242AB834406DB /* Pods-GSVersionComparator */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 881E85FA09F546E4A2D7A05B /* Build configuration list for PBXNativeTarget "Pods-GSVersionComparator" */;
-			buildPhases = (
-				A88C6FE26919455FBA545917 /* Sources */,
-				804440AC8E2B4B90967C821C /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BEFD3C6D64924667BE68F402 /* PBXTargetDependency */,
-				5F9B3832DEDA40FAAC65E61D /* PBXTargetDependency */,
-			);
-			name = "Pods-GSVersionComparator";
-			productName = "Pods-GSVersionComparator";
-			productReference = 179F537F36F94A00ACC8813B /* libPods-GSVersionComparator.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		785516BD86B84470AF236E08 /* Pods-GSVersionComparator-GHUnit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 067EF1A9C9AB4A3DB63D8173 /* Build configuration list for PBXNativeTarget "Pods-GSVersionComparator-GHUnit" */;
-			buildPhases = (
-				1B5E739F317B481EA651E77B /* Sources */,
-				84F0F87E3BDD4130A294D6D6 /* Frameworks */,
-				1B379B0713CB4C8997624734 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-GSVersionComparator-GHUnit";
-			productName = "Pods-GSVersionComparator-GHUnit";
-			productReference = 5A450F5EE1DF44DD882F95FD /* libPods-GSVersionComparator-GHUnit.a */;
+			productReference = 4C1A933FAE6C4655ACD6A5A7 /* libPods-GSVersionComparator-GSVersionComparator.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		40328C419D9E47DB8FEAB3FB /* Project object */ = {
+		A8BB0F5BC4BE427FB39E9467 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 4C14B28129C94AEB8BDCD446 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = D4E15A74D2FB49E9A2F3F851 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 284E7E5286574DB38E99A28B;
-			productRefGroup = E20875E88EBE4E4BA0180B4A /* Products */;
+			mainGroup = 9A76B9B6FC8D45049D52D7F7;
+			productRefGroup = 9559E33F53864C18BFC04BE4 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 			);
 			projectRoot = "";
 			targets = (
-				65B92F06FF2242AB834406DB /* Pods-GSVersionComparator */,
-				785516BD86B84470AF236E08 /* Pods-GSVersionComparator-GHUnit */,
-				3CEF0E454364462883EC9F0E /* Pods-GSVersionComparator-GSVersionComparator */,
+				5F12C78F93F54C959B1255C3 /* Pods-GSVersionComparator */,
+				8D3766487E934275982CC543 /* Pods-GSVersionComparator-GSVersionComparator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1B5E739F317B481EA651E77B /* Sources */ = {
+		948162482EC74DECB59453AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D63CFBA7419340789727C35F /* GHAsyncTestCase.m in Sources */,
-				9B8D8A59AB9C4F04B28758AA /* GHImageDiffView.m in Sources */,
-				C0D892293BCF4CBABFD41189 /* GHMockNSHTTPURLResponse.m in Sources */,
-				207F92CF314C4C4985297C31 /* GHMockNSURLConnection.m in Sources */,
-				24247052E875403FB9A6057C /* GHTest+JUnitXML.m in Sources */,
-				ACA04D92B51E4E66B86933F6 /* GHTest.m in Sources */,
-				53D03E256C284D18A19A6979 /* GHTestCase.m in Sources */,
-				4A1AB30EB1834B6AA0C6C5FA /* GHTestGroup+JUnitXML.m in Sources */,
-				B9774B8F0CAB4BDC8763EEA5 /* GHTestGroup.m in Sources */,
-				D36EB89C9BA54653BB685982 /* GHTestOperation.m in Sources */,
-				5FCD759B420045F3B9DFCCF7 /* GHTestRunner.m in Sources */,
-				A1AE035913AE4D61AEE81B97 /* GHTestSuite.m in Sources */,
-				49F63E378DEB4E288DE48D83 /* GHTestUtils.m in Sources */,
-				BBA0D3DC327A4248AE467E48 /* GHTestViewModel.m in Sources */,
-				4447374862F4450F94835DB4 /* GHTesting.m in Sources */,
-				29DFE899813A41DAACD0D07D /* GHUIImageViewControl.m in Sources */,
-				234A95E501B24AAEAE6C71B5 /* GHUnitIOSAppDelegate.m in Sources */,
-				E445AA8BB3DF4A8CA7597EB2 /* GHUnitIOSTableViewDataSource.m in Sources */,
-				ED288A45F12142B9BBE97DCB /* GHUnitIOSTestView.m in Sources */,
-				B14532CABF9247EFBC82CD0D /* GHUnitIOSTestViewController.m in Sources */,
-				91B86033B66A44FBB0BDD6D8 /* GHUnitIOSView.m in Sources */,
-				11C66EB1E2AA4951B7C6FCD7 /* GHUnitIOSViewController.m in Sources */,
-				0CBCDBA4840942F095D4B5C9 /* GHUnitIPhoneAppDelegate.m in Sources */,
-				EBBDD58FB2884E8781238CFB /* GHViewTestCase.m in Sources */,
-				B9BBCEA9DE0D4762990B8AA1 /* GTMNSString+XML.m in Sources */,
-				2936BABB94FD404B9CFF7A3E /* GTMObjC2Runtime.m in Sources */,
-				B6C9E251D16F477C89065AF9 /* NSException+GHTestFailureExceptions.m in Sources */,
-				BBB8782627304344892419B3 /* NSValue+GHValueFormatter.m in Sources */,
-				66C6B0B8A7B14E6E99DEB4BB /* Pods-GSVersionComparator-GHUnit-dummy.m in Sources */,
+				83AAE378BA72485A9DD66AB7 /* GSComparableVersion.m in Sources */,
+				F9321CDFFC1D473BB97682BC /* GSIntegerItem.m in Sources */,
+				06F8305A91554B0C9CB521A9 /* GSItem.m in Sources */,
+				1363B5D40FBA4C22A6F86D7A /* GSListItem.m in Sources */,
+				4C91B9B0CC934CC2B6F1EB81 /* GSStringItem.m in Sources */,
+				C6D5DAA69E904D1FB033FC2D /* NSString+GSVersionComparator.m in Sources */,
+				B7810C1E47F14AA8B442AE1B /* Pods-GSVersionComparator-GSVersionComparator-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A88C6FE26919455FBA545917 /* Sources */ = {
+		E370B190598C487DB696F5B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				417625EABE4944A1A046447E /* Pods-GSVersionComparator-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C583F21188B047F79335E4DB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A05B4A335CB54306B79146C5 /* GSComparableVersion.m in Sources */,
-				A99530755BBB4DB8BB61AA57 /* GSIntegerItem.m in Sources */,
-				FC200F1AE1A0440F824CE1E6 /* GSItem.m in Sources */,
-				9BA55E4F158A4602AFBB848E /* GSListItem.m in Sources */,
-				3C072C49DBEE4BBE91E052E8 /* GSStringItem.m in Sources */,
-				4492484D229942AD83A9AF89 /* NSString+GSVersionComparator.m in Sources */,
-				3CB823320BA14C34B654E39D /* Pods-GSVersionComparator-GSVersionComparator-dummy.m in Sources */,
+				65620B513BF44E45B95294EE /* Pods-GSVersionComparator-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5F9B3832DEDA40FAAC65E61D /* PBXTargetDependency */ = {
+		BAA323E6032E49309F073846 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3CEF0E454364462883EC9F0E /* Pods-GSVersionComparator-GSVersionComparator */;
-			targetProxy = 1AECA50B9EB54B14AB889403 /* PBXContainerItemProxy */;
-		};
-		BEFD3C6D64924667BE68F402 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 785516BD86B84470AF236E08 /* Pods-GSVersionComparator-GHUnit */;
-			targetProxy = CD087DD810164080B2B3B9A7 /* PBXContainerItemProxy */;
+			target = 8D3766487E934275982CC543 /* Pods-GSVersionComparator-GSVersionComparator */;
+			targetProxy = D669C26504F2498BB233741D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		24E3B7A4C6F04E5C949B465C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBC47B51BDD342728B966278 /* Pods-GSVersionComparator-GSVersionComparator-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-GSVersionComparator-GSVersionComparator-prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		54195409C22B40978AC094D1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBC47B51BDD342728B966278 /* Pods-GSVersionComparator-GSVersionComparator-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-GSVersionComparator-GSVersionComparator-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		68BA87D44C2A42A9A5D110E3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 285ADD943A0948349B7AC493 /* Pods-GSVersionComparator-GHUnit-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-GSVersionComparator-GHUnit-prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		7090136F37244021B86EA37C /* Release */ = {
+		03111A5884CB4E2EB3073CE1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -749,9 +328,37 @@
 			};
 			name = Release;
 		};
-		7EADC3C456014D1293AA3115 /* Debug */ = {
+		319B0BEE9B604870B30746B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1AC20A455444232A0E3CAD6 /* Pods-GSVersionComparator.xcconfig */;
+			baseConfigurationReference = C41F0A4746B546E0A5454FE0 /* Pods-GSVersionComparator-GSVersionComparator-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-GSVersionComparator-GSVersionComparator-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5503F8695A454989867D6469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C9B16A4DE7F4FA5846770CB /* Pods-GSVersionComparator.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
@@ -776,9 +383,9 @@
 			};
 			name = Debug;
 		};
-		9E9D3362043B4EA49D65A9B6 /* Release */ = {
+		7B2D53FD979442A486FDC3D1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1AC20A455444232A0E3CAD6 /* Pods-GSVersionComparator.xcconfig */;
+			baseConfigurationReference = 3C9B16A4DE7F4FA5846770CB /* Pods-GSVersionComparator.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
@@ -805,7 +412,37 @@
 			};
 			name = Release;
 		};
-		AA70A0103AA6444ABE30A78B /* Debug */ = {
+		CF06F5099BBD4484AC88B679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C41F0A4746B546E0A5454FE0 /* Pods-GSVersionComparator-GSVersionComparator-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-GSVersionComparator-GSVersionComparator-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE6FDE38DAB2454BAC8292BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -841,74 +478,37 @@
 			};
 			name = Debug;
 		};
-		EA2DB9F4831B4AAB9F157491 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 285ADD943A0948349B7AC493 /* Pods-GSVersionComparator-GHUnit-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-GSVersionComparator-GHUnit-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		067EF1A9C9AB4A3DB63D8173 /* Build configuration list for PBXNativeTarget "Pods-GSVersionComparator-GHUnit" */ = {
+		0318C7C4957A4AED88A8F2AC /* Build configuration list for PBXNativeTarget "Pods-GSVersionComparator-GSVersionComparator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA2DB9F4831B4AAB9F157491 /* Debug */,
-				68BA87D44C2A42A9A5D110E3 /* Release */,
+				319B0BEE9B604870B30746B5 /* Debug */,
+				CF06F5099BBD4484AC88B679 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C14B28129C94AEB8BDCD446 /* Build configuration list for PBXProject "Pods" */ = {
+		37F55608C49B485D90D5A8EB /* Build configuration list for PBXNativeTarget "Pods-GSVersionComparator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA70A0103AA6444ABE30A78B /* Debug */,
-				7090136F37244021B86EA37C /* Release */,
+				5503F8695A454989867D6469 /* Debug */,
+				7B2D53FD979442A486FDC3D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		62578CF5257B41E4A040BD09 /* Build configuration list for PBXNativeTarget "Pods-GSVersionComparator-GSVersionComparator" */ = {
+		D4E15A74D2FB49E9A2F3F851 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				54195409C22B40978AC094D1 /* Debug */,
-				24E3B7A4C6F04E5C949B465C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		881E85FA09F546E4A2D7A05B /* Build configuration list for PBXNativeTarget "Pods-GSVersionComparator" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7EADC3C456014D1293AA3115 /* Debug */,
-				9E9D3362043B4EA49D65A9B6 /* Release */,
+				DE6FDE38DAB2454BAC8292BA /* Debug */,
+				03111A5884CB4E2EB3073CE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 40328C419D9E47DB8FEAB3FB /* Project object */;
+	rootObject = A8BB0F5BC4BE427FB39E9467 /* Project object */;
 }

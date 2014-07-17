@@ -6,12 +6,6 @@
 // project.
 
 
-// GHUnit
-#define COCOAPODS_POD_AVAILABLE_GHUnit
-#define COCOAPODS_VERSION_MAJOR_GHUnit 0
-#define COCOAPODS_VERSION_MINOR_GHUnit 5
-#define COCOAPODS_VERSION_PATCH_GHUnit 9
-
 // GSVersionComparator
 #define COCOAPODS_POD_AVAILABLE_GSVersionComparator
 #define COCOAPODS_VERSION_MAJOR_GSVersionComparator 0

@@ -2,4 +2,4 @@ reference: http://www.objc.io/issue-6/travis-ci.html
 language: objective-c
 cache: bundler
 script:
-- GHUNIT_CLI=1 xctool test -workspace Example/GSVersionComparator.xcworkspace -scheme GSVersionComparator -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- xctool test -workspace Example/GSVersionComparator.xcworkspace -scheme GSVersionComparator -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO

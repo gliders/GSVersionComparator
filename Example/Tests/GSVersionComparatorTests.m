@@ -6,24 +6,25 @@
 //  Copyright (c) 2014 Ryan Brignoni. All rights reserved.
 //
 
-#import "GHTestCase.h"
+#import <XCTest/XCTestCase.h>
 #import "GSComparableVersion.h"
 
-@interface GSComparableVersionTest : GHTestCase
+@interface GSComparableVersionTest : XCTestCase
 @property (nonatomic, strong) NSArray *versionsQualifier;
 @property (nonatomic, strong) NSArray *versionsNumber;
 @end
 
 @implementation GSComparableVersionTest
 
-- (void)setUpClass {
-    [super setUpClass];
-    self.versionsQualifier = @[@"1-alpha2snapshot", @"1-alpha2", @"1-alpha-123", @"1-beta-2", @"1-beta123", @"1-m2", @"1-m11", @"1-rc", @"1-cr2",
-            @"1-rc123", @"1-SNAPSHOT", @"1", @"1-sp", @"1-sp2", @"1-sp123", @"1-abc", @"1-def", @"1-pom-1", @"1-1-snapshot",
-            @"1-1", @"1-2", @"1-123"];
+- (void)setUp {
+    if (!self.versionsQualifier) {
+        self.versionsQualifier = @[@"1-alpha2snapshot", @"1-alpha2", @"1-alpha-123", @"1-beta-2", @"1-beta123", @"1-m2", @"1-m11", @"1-rc", @"1-cr2",
+                @"1-rc123", @"1-SNAPSHOT", @"1", @"1-sp", @"1-sp2", @"1-sp123", @"1-abc", @"1-def", @"1-pom-1", @"1-1-snapshot",
+                @"1-1", @"1-2", @"1-123"];
 
-    self.versionsNumber = @[@"2.0", @"2-1", @"2.0.a", @"2.0.0.a", @"2.0.2", @"2.0.123", @"2.1.0", @"2.1-a", @"2.1b", @"2.1-c", @"2.1-1", @"2.1.0.1",
-            @"2.2", @"2.123", @"11.a2", @"11.a11", @"11.b2", @"11.b11", @"11.m2", @"11.m11", @"11", @"11.a", @"11b", @"11c", @"11m"];
+        self.versionsNumber = @[@"2.0", @"2-1", @"2.0.a", @"2.0.0.a", @"2.0.2", @"2.0.123", @"2.1.0", @"2.1-a", @"2.1b", @"2.1-c", @"2.1-1", @"2.1.0.1",
+                @"2.2", @"2.123", @"11.a2", @"11.a11", @"11.b2", @"11.b11", @"11.m2", @"11.m11", @"11", @"11.a", @"11b", @"11c", @"11m"];
+    }
 }
 
 - (void)checkVersionsOrder:(NSArray *)versions {
@@ -39,28 +40,28 @@
         for (int j = i; j < versions.count; j++) {
             GSComparableVersion *high = [c objectAtIndex:j];
 
-            GHAssertTrue([low compare:high] < 0, @"expected %@ < %@", low, high);
-            GHAssertTrue([high compare:low] > 0, @"expected %@ > %@", high, low);
+            XCTAssertTrue([low compare:high] < 0, @"expected %@ < %@", low, high);
+            XCTAssertTrue([high compare:low] > 0, @"expected %@ > %@", high, low);
         }
     }
 
-    GHAssertTrue(testPassed, @"Comparisons failed");
+    XCTAssertTrue(testPassed, @"Comparisons failed");
 }
 
 - (void)checkVersion:(NSString *)version1 equals:(NSString *)version2 {
     GSComparableVersion *c1 = [[GSComparableVersion alloc] initWithVersion:version1];
     GSComparableVersion *c2 = [[GSComparableVersion alloc] initWithVersion:version2];
 
-    GHAssertTrue([c1 compare:c2] == 0, @"expected %@ == %@", c1, c2);
-    GHAssertTrue([c2 compare:c1] == 0, @"expected %@ == %@", c2, c1);
+    XCTAssertTrue([c1 compare:c2] == 0, @"expected %@ == %@", c1, c2);
+    XCTAssertTrue([c2 compare:c1] == 0, @"expected %@ == %@", c2, c1);
 }
 
 - (void)checkVersion:(NSString *)version1 comesBefore:(NSString *)version2 {
     GSComparableVersion *c1 = [[GSComparableVersion alloc] initWithVersion:version1];
     GSComparableVersion *c2 = [[GSComparableVersion alloc] initWithVersion:version2];
 
-    GHAssertTrue([c1 compare:c2] < 0, @"expected %@ < %@", c1, c2);
-    GHAssertTrue([c2 compare:c1] > 0, @"expected %@ > %@", c2, c1);
+    XCTAssertTrue([c1 compare:c2] < 0, @"expected %@ < %@", c1, c2);
+    XCTAssertTrue([c2 compare:c1] > 0, @"expected %@ > %@", c2, c1);
 }
 
 - (void)testVersionsQualifier {

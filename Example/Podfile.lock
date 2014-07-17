@@ -1,9 +1,7 @@
 PODS:
-  - GHUnit (0.5.9)
   - GSVersionComparator (0.1.0)
 
 DEPENDENCIES:
-  - GHUnit (= 0.5.9)
   - GSVersionComparator (from `../`)
 
 EXTERNAL SOURCES:
@@ -11,7 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  GHUnit: 4ea5a83295587ab226c458fc30dfdb1616fba633
   GSVersionComparator: 3f59a8e01c2d6e4e9c34030f82a3bb4fabda38ba
 
 COCOAPODS: 0.33.1
