@@ -1,20 +1,17 @@
 PODS:
-  - Expecta (0.3.1)
+  - GHUnit (0.5.9)
   - GSVersionComparator (0.1.0)
-  - Specta (0.2.1)
 
 DEPENDENCIES:
-  - Expecta
+  - GHUnit (= 0.5.9)
   - GSVersionComparator (from `../`)
-  - Specta (~> 0.2.1)
 
 EXTERNAL SOURCES:
   GSVersionComparator:
     :path: ../
 
 SPEC CHECKSUMS:
-  Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
+  GHUnit: 4ea5a83295587ab226c458fc30dfdb1616fba633
   GSVersionComparator: 3f59a8e01c2d6e4e9c34030f82a3bb4fabda38ba
-  Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
 
 COCOAPODS: 0.33.1

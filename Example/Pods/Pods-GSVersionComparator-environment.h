@@ -6,21 +6,15 @@
 // project.
 
 
-// Expecta
-#define COCOAPODS_POD_AVAILABLE_Expecta
-#define COCOAPODS_VERSION_MAJOR_Expecta 0
-#define COCOAPODS_VERSION_MINOR_Expecta 3
-#define COCOAPODS_VERSION_PATCH_Expecta 1
+// GHUnit
+#define COCOAPODS_POD_AVAILABLE_GHUnit
+#define COCOAPODS_VERSION_MAJOR_GHUnit 0
+#define COCOAPODS_VERSION_MINOR_GHUnit 5
+#define COCOAPODS_VERSION_PATCH_GHUnit 9
 
 // GSVersionComparator
 #define COCOAPODS_POD_AVAILABLE_GSVersionComparator
 #define COCOAPODS_VERSION_MAJOR_GSVersionComparator 0
 #define COCOAPODS_VERSION_MINOR_GSVersionComparator 1
 #define COCOAPODS_VERSION_PATCH_GSVersionComparator 0
-
-// Specta
-#define COCOAPODS_POD_AVAILABLE_Specta
-#define COCOAPODS_VERSION_MAJOR_Specta 0
-#define COCOAPODS_VERSION_MINOR_Specta 2
-#define COCOAPODS_VERSION_PATCH_Specta 1
 

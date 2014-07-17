@@ -2,6 +2,5 @@
 target 'GSVersionComparator', :exclusive => true do
   pod "GSVersionComparator", :path => "../"
 
-  pod 'Specta', '~> 0.2.1'
-  pod 'Expecta'
+  pod 'GHUnit', '0.5.9'
 end
