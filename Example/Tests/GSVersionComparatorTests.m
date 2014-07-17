@@ -33,8 +33,6 @@
         [c addObject:[[GSComparableVersion alloc] initWithVersion:version]];
     }
 
-    BOOL testPassed = YES;
-
     for (int i = 1; i < versions.count; i++) {
         GSComparableVersion *low = [c objectAtIndex:i - 1];
         for (int j = i; j < versions.count; j++) {
@@ -44,8 +42,6 @@
             XCTAssertTrue([high compare:low] > 0, @"expected %@ > %@", high, low);
         }
     }
-
-    XCTAssertTrue(testPassed, @"Comparisons failed");
 }
 
 - (void)checkVersion:(NSString *)version1 equals:(NSString *)version2 {
