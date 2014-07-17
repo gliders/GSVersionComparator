@@ -1,5 +1,8 @@
 reference: http://www.objc.io/issue-6/travis-ci.html
 language: objective-c
 cache: bundler
+before_install:
+  - brew update
+  - brew upgrade xctool
 script:
 - xctool test -workspace Example/GSVersionComparator.xcworkspace -scheme GSVersionComparator -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
