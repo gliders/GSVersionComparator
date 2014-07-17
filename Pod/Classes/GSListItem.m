@@ -104,7 +104,7 @@
             return NSOrderedSame;
         }
         default:
-            CTLog(@"error", 0, @"Compared list item to unknown item, %@", item);
+            NSLog(@"ERORR: Compared list item to unknown item, %@", item);
             NSException *exception = [NSException exceptionWithName:@"Comparator Error"
                                                              reason:@"Compared list item to unknown item"
                                                            userInfo:nil];

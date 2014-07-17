@@ -104,7 +104,7 @@
         case LIST_ITEM:
             return NSOrderedAscending; // 1.any < 1-1
         default:
-            CTLog(@"error", 0, @"Compared string item to unknown item, %@", item);
+            NSLog(@"ERROR: Compared string item to unknown item, %@", item);
             NSException *exception = [NSException exceptionWithName:@"Comparator Error"
                                                              reason:@"Compared string item to unknown item"
                                                            userInfo:nil];

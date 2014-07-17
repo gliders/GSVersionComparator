@@ -52,7 +52,7 @@
             return NSOrderedDescending; // 1.1 > 1-1
 
         default:
-            CTLog(@"error", 0, @"Compared integer item to unknown item, %@", item);
+            NSLog(@"ERROR: Compared integer item to unknown item, %@", item);
             NSException *exception = [NSException exceptionWithName:@"Comparator Error"
                                                              reason:@"Compared integer item to unknown item"
                                                            userInfo:nil];
