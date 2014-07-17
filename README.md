@@ -46,7 +46,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-[Ryan Brignoni](https://github.com/castral)
+[Ryan Brignoni](https://github.com/castral)  
 Twitter: [@RyanBrignoni](https://twitter.com/RyanBrignoni)
 
 ## License
