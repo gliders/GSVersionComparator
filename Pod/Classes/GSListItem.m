@@ -46,7 +46,7 @@
 {
     NSMutableArray *indexesToRemove = [NSMutableArray array];
 
-    for (int i = [self.list count] - 1; i >= 0; i--) {
+    for (NSUInteger i = [self.list count] - 1; i >= 0; i--) {
         GSItem *item = [self.list objectAtIndex:i];
         if (item.isEmpty) {
             [indexesToRemove addObject:[NSNumber numberWithInt:i]];

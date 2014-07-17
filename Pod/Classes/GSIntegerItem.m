@@ -28,7 +28,7 @@
 - (id)initWithInteger:(NSInteger)i {
     self = [super init];
     if (self) {
-        self.value = [NSNumber numberWithInt:i];
+        self.value = [NSNumber numberWithInteger:i];
     }
 
     return self;

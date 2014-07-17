@@ -74,21 +74,21 @@
 }
 
 - (BOOL)isEmpty {
-    return ([[self comparableQualifier:self.value] compare:[NSString stringWithFormat:@"%d", self.releaseVersionIndex]] == 0);
+    return ([[self comparableQualifier:self.value] compare:[NSString stringWithFormat:@"%lu", (unsigned long) self.releaseVersionIndex]] == 0);
 }
 
 - (NSString *)comparableQualifier:(NSString *)qualifier
 {
-    int i = [self.qualifiers indexOfObject:[qualifier lowercaseString]];
-    return i == NSNotFound
-            ? [NSString stringWithFormat:@"%d-%@", self.qualifiers.count, qualifier]
-            : [NSString stringWithFormat:@"%d", i];
+    NSUInteger i = [self.qualifiers indexOfObject:[qualifier lowercaseString]];
+    return (i == NSNotFound)
+            ? [NSString stringWithFormat:@"%lu-%@", (unsigned long) self.qualifiers.count, qualifier]
+            : [NSString stringWithFormat:@"%lu", (unsigned long) i];
 }
 
 - (NSComparisonResult)compare:(GSItem *)item {
     if (!item) {
         // 1-rc < 1, 1-ga > 1
-        return [[self comparableQualifier:self.value] compare:[NSString stringWithFormat:@"%d", self.releaseVersionIndex]];
+        return [[self comparableQualifier:self.value] compare:[NSString stringWithFormat:@"%lu", (unsigned long) self.releaseVersionIndex]];
     }
 
     switch (item.type)
