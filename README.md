@@ -29,7 +29,9 @@ if ([versionComponent gs_versionEquals:supportedAPIVersion]) {
 }
 
 // Compare complex version strings like '1' and '1.0-0'
-BOOL versionsEqual = [@"1" gs_versionEquals:@"1.0-0"]; // Returns YES 
+BOOL test = [@"1" gs_versionEquals:@"1.0-0"]; // Returns YES
+BOOL test = [@"1.0.b" gs_versionGreaterThan:@"1.0.a"]; // Returns YES
+BOOL test = [@"1.0" gs_versionLessThan:@"1.0-SNAPSHOT"]; // Returns NO
 
 ```
 
