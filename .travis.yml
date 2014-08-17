@@ -1,4 +1,6 @@
 reference: http://www.objc.io/issue-6/travis-ci.html
 language: objective-c
 cache: bundler
-script: rake test
+script:
+    - xctool test -workspace GSVersionComparator.xcworkspace -scheme iOS-Tests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+    - xctool test -workspace GSVersionComparator.xcworkspace -scheme OSX-Tests -sdk macosx ONLY_ACTIVE_ARCH=NO
