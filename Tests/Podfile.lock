@@ -1,0 +1,14 @@
+PODS:
+  - GSVersionComparator (0.2.0)
+
+DEPENDENCIES:
+  - GSVersionComparator (from `../`)
+
+EXTERNAL SOURCES:
+  GSVersionComparator:
+    :path: ../
+
+SPEC CHECKSUMS:
+  GSVersionComparator: f051b02a3d844a57f1c1255568b01f7a50b78f3f
+
+COCOAPODS: 0.33.1

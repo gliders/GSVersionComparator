@@ -4,5 +4,5 @@ cache: bundler
 before_install:
   - brew update
   - brew upgrade xctool
-script:
-- xctool test -workspace Example/GSVersionComparator.xcworkspace -scheme GSVersionComparator -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - cd $TRAVIS_BUILD_DIR
+script: rake test

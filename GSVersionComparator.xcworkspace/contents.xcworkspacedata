@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:GSVersionComparator"
+      name = "GSVersionComparator">
+      <FileRef
+         location = "group:GSComparableVersion.h">
+      </FileRef>
+      <FileRef
+         location = "group:GSComparableVersion.m">
+      </FileRef>
+      <FileRef
+         location = "group:GSIntegerItem.h">
+      </FileRef>
+      <FileRef
+         location = "group:GSIntegerItem.m">
+      </FileRef>
+      <FileRef
+         location = "group:GSItem.h">
+      </FileRef>
+      <FileRef
+         location = "group:GSItem.m">
+      </FileRef>
+      <FileRef
+         location = "group:GSListItem.h">
+      </FileRef>
+      <FileRef
+         location = "group:GSListItem.m">
+      </FileRef>
+      <FileRef
+         location = "group:GSStringItem.h">
+      </FileRef>
+      <FileRef
+         location = "group:GSStringItem.m">
+      </FileRef>
+      <FileRef
+         location = "group:NSString+GSVersionComparator.h">
+      </FileRef>
+      <FileRef
+         location = "group:NSString+GSVersionComparator.m">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:Tests/GSVersionComparator Tests.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Tests/Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
