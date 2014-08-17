@@ -1,8 +1,4 @@
 reference: http://www.objc.io/issue-6/travis-ci.html
 language: objective-c
 cache: bundler
-before_install:
-  - brew update
-  - brew upgrade xctool
-  - cd $TRAVIS_BUILD_DIR
 script: rake test
