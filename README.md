@@ -35,7 +35,7 @@ BOOL test = [@"1.0" gs_versionLessThan:@"1.0-SNAPSHOT"]; // Returns NO
 
 ```
 
-Check the [unit tests](https://github.com/gliders/GSVersionComparator/blob/master/Example/Tests/GSVersionComparatorTests.m) for more examples of version strings supported.
+Check the [unit tests](https://github.com/gliders/GSVersionComparator/blob/master/Tests/Test%20Cases/GSVersionComparatorTests.m) for more examples of version strings supported.
 
 ## Installation
 
