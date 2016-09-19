@@ -36,6 +36,7 @@
 @implementation GSComparableVersion
 
 - (id)initWithVersion:(NSString *)version {
+    NSAssert(version.length != 0, @"Version string cannot be empty");
     self = [super init];
     if (self) {
         self.items = [[GSListItem alloc] init];

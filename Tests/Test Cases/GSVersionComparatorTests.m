@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTestCase.h>
 #import "GSComparableVersion.h"
+#import "NSString+GSVersionComparator.h"
 
 @interface GSComparableVersionTest : XCTestCase
 @property (nonatomic, strong) NSArray *versionsQualifier;
@@ -58,6 +59,10 @@
 
     XCTAssertTrue([c1 compare:c2] < 0, @"expected %@ < %@", c1, c2);
     XCTAssertTrue([c2 compare:c1] > 0, @"expected %@ > %@", c2, c1);
+}
+
+- (void)testVersionConstruction {
+    XCTAssertThrowsSpecificNamed(@"".gs_comparableVersion, NSException, NSInternalInconsistencyException);
 }
 
 - (void)testVersionsQualifier {
