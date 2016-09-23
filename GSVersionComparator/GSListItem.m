@@ -42,14 +42,17 @@
     return ([self.list count] == 0);
 }
 
-- (void)normalize
-{
+- (void)normalize {
+    if ([self.list count] == 0) {
+        return;
+    }
+
     NSMutableArray *indexesToRemove = [NSMutableArray array];
 
     for (NSUInteger i = [self.list count] - 1; i > 0; i--) {
-        GSItem *item = [self.list objectAtIndex:i];
+        GSItem *item = self.list[i];
         if (item.isEmpty) {
-            [indexesToRemove addObject:[NSNumber numberWithUnsignedInteger:i]];
+            [indexesToRemove addObject:@(i)];
         } else {
             break;
         }
@@ -66,7 +69,7 @@
             return NSOrderedSame; // 1-0 = 1- (normalize) = 1
         }
 
-        GSItem *first = [self.list objectAtIndex:0];
+        GSItem *first = self.list[0];
         return [first compare:nil];
     }
 
@@ -88,8 +91,8 @@
             GSItem *r;
 
             while ((left < leftMax) || (right < rightMax)) {
-                l = (left < leftMax) ? [self.list objectAtIndex:left] : nil;
-                r = (right < rightMax) ? [((GSListItem *)item).list objectAtIndex:left] : nil;
+                l = (left < leftMax) ? self.list[left] : nil;
+                r = (right < rightMax) ? ((GSListItem *) item).list[left] : nil;
 
                 left++;
                 right++;
@@ -104,7 +107,7 @@
             return NSOrderedSame;
         }
         default:
-            NSLog(@"ERORR: Compared list item to unknown item, %@", item);
+            NSLog(@"ERROR: Compared list item to unknown item, %@", item);
             NSException *exception = [NSException exceptionWithName:@"Comparator Error"
                                                              reason:@"Compared list item to unknown item"
                                                            userInfo:nil];
@@ -120,6 +123,5 @@
     [description appendString:@">"];
     return description;
 }
-
 
 @end

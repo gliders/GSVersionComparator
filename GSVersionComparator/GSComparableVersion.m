@@ -29,13 +29,16 @@
 #import "GSStringItem.h"
 
 @interface GSComparableVersion ()
-@property (nonatomic, copy) NSString *value;
-@property (nonatomic, copy) NSString *canonicalVersion;
+@property (nonnull, nonatomic, strong) GSListItem *items;
+@property (readwrite, nullable, nonatomic, copy) NSString *value;
+
+- (void)parse:(nullable NSString *)version;
+
 @end
 
 @implementation GSComparableVersion
 
-- (id)initWithVersion:(NSString *)version {
+- (nonnull instancetype)initWithVersion:(nullable NSString *)version {
     self = [super init];
     if (self) {
         self.items = [[GSListItem alloc] init];
@@ -45,15 +48,15 @@
     return self;
 }
 
-- (void)parse:(NSString *)version {
-    self.value = version;
+- (void)parse:(nullable NSString *)version {
+    self.value = (version) ? version : @"";
     GSListItem *list = self.items;
     NSMutableArray *stack = [NSMutableArray array];
     [stack addObject:self.items];
     BOOL isDigit = NO;
-    int startIndex = 0;
+    NSUInteger startIndex = 0;
 
-    for (int i = 0; i < [version length]; i++) {
+    for (NSUInteger i = 0; i < [version length]; i++) {
         unichar c = [version characterAtIndex:i];
         if (c == '.') {
             if (i == startIndex) {
@@ -107,17 +110,15 @@
     while ((stackItem = stackEnumerator.nextObject)) {
         [stackItem normalize];
     }
-
-    self.canonicalVersion = self.items.description;
 }
 
-- (GSItem *)parseItem:(NSString *)subversion asInteger:(BOOL)asInteger{
+- (GSItem *)parseItem:(NSString *)subversion asInteger:(BOOL)asInteger {
     return (asInteger)
             ? [[GSIntegerItem alloc] initWithInteger:[subversion integerValue]]
             : [[GSStringItem alloc] initWithString:subversion andFollowedByDigit:NO];
 }
 
-- (NSComparisonResult)compare:(GSComparableVersion *)comparableVersion {
+- (NSComparisonResult)compare:(nullable GSComparableVersion *)comparableVersion {
     return [self.items compare:comparableVersion.items];
 }
 

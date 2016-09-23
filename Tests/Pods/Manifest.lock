@@ -1,5 +1,5 @@
 PODS:
-  - GSVersionComparator (0.2.0)
+  - GSVersionComparator (1.0.0)
 
 DEPENDENCIES:
   - GSVersionComparator (from `../`)
@@ -9,6 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  GSVersionComparator: f051b02a3d844a57f1c1255568b01f7a50b78f3f
+  GSVersionComparator: 57d686b1a8864badc1504d9d12af06348aef25df
 
-COCOAPODS: 0.33.1
+PODFILE CHECKSUM: f7a686d730b8ae15f2a7dbac93c363a11f525687
+
+COCOAPODS: 1.1.0.rc.2

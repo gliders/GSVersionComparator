@@ -1,19 +1,20 @@
-Pod::Spec.new do |s|
-  s.name             = "GSVersionComparator"
-  s.version          = "0.2.0"
-  s.summary          = "A port of Apache Maven's ComparableVersion to Obj-C."
-  s.description      = <<-DESC
+Pod::Spec.new do |spec|
+  spec.name             = "GSVersionComparator"
+  spec.version          = "1.0.0"
+  spec.summary          = "A port of Apache Maven's ComparableVersion to Obj-C and Swift."
+  spec.description      = <<-DESC
                        A direct port of org.apache.maven.artifact.versioning.ComparableVersion from the Apache Maven Project
-                       to Objective-C.
+                       to Objective-C and Swift.
                        DESC
-  s.homepage         = "https://github.com/gliders/GSVersionComparator"
-  s.license          = 'Apache v2'
-  s.author           = { "Ryan Brignoni" => "castral01@gmail.com" }
-  s.source           = { :git => "https://github.com/gliders/GSVersionComparator.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/RyanBrignoni'
+  spec.homepage         = "https://github.com/gliders/GSVersionComparator"
+  spec.license          = { :type => 'Apache v2', :file => 'LICENSE'}
+  spec.author           = { "Ryan Brignoni" => "castral01@gmail.com" }
+  spec.source           = { :git => "https://github.com/gliders/GSVersionComparator.git", :tag => spec.version.to_s }
+  spec.social_media_url = 'https://twitter.com/castral01'
 
-  s.requires_arc = true
-
-  s.source_files = 'GSVersionComparator'
-  s.public_header_files = 'GSVersionComparator/**/*.h'
+  spec.ios.deployment_target = '8.4'
+  spec.osx.deployment_target = '10.9'
+  spec.source_files = 'GSVersionComparator/**/*.{h,m}'
+  spec.public_header_files = 'GSVersionComparator/Headers/Public/*.h'
+  spec.private_header_files = 'GSVersionComparator/Headers/Private/*.h'
 end

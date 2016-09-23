@@ -1,0 +1,26 @@
+{
+  "name": "GSVersionComparator",
+  "version": "1.0.0",
+  "summary": "A port of Apache Maven's ComparableVersion to Obj-C and Swift.",
+  "description": "A direct port of org.apache.maven.artifact.versioning.ComparableVersion from the Apache Maven Project\nto Objective-C and Swift.",
+  "homepage": "https://github.com/gliders/GSVersionComparator",
+  "license": {
+    "type": "Apache v2",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Ryan Brignoni": "castral01@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/gliders/GSVersionComparator.git",
+    "tag": "1.0.0"
+  },
+  "social_media_url": "https://twitter.com/castral01",
+  "platforms": {
+    "ios": "8.4",
+    "osx": "10.9"
+  },
+  "source_files": "GSVersionComparator/**/*.{h,m}",
+  "public_header_files": "GSVersionComparator/Headers/Public/*.h",
+  "private_header_files": "GSVersionComparator/Headers/Private/*.h"
+}

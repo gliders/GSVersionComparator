@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Ryan Brignoni. All rights reserved.
 //
 
-#import <XCTest/XCTestCase.h>
-#import "GSComparableVersion.h"
+#import <XCTest/XCTest.h>
+#import <GSVersionComparator/GSComparableVersion.h>
 
 @interface GSComparableVersionTest : XCTestCase
 @property (nonatomic, strong) NSArray *versionsQualifier;
@@ -33,13 +33,13 @@
         [c addObject:[[GSComparableVersion alloc] initWithVersion:version]];
     }
 
-    for (int i = 1; i < versions.count; i++) {
-        GSComparableVersion *low = [c objectAtIndex:i - 1];
-        for (int j = i; j < versions.count; j++) {
-            GSComparableVersion *high = [c objectAtIndex:j];
+    for (NSUInteger i = 1; i < versions.count; i++) {
+        GSComparableVersion *low = c[i - 1];
+        for (NSUInteger j = i; j < versions.count; j++) {
+            GSComparableVersion *high = c[j];
 
-            XCTAssertTrue([low compare:high] < 0, @"expected %@ < %@", low, high);
-            XCTAssertTrue([high compare:low] > 0, @"expected %@ > %@", high, low);
+            XCTAssertTrue([low compare:high] == NSOrderedAscending, @"expected %@ < %@", low, high);
+            XCTAssertTrue([high compare:low] == NSOrderedDescending, @"expected %@ > %@", high, low);
         }
     }
 }
@@ -48,16 +48,16 @@
     GSComparableVersion *c1 = [[GSComparableVersion alloc] initWithVersion:version1];
     GSComparableVersion *c2 = [[GSComparableVersion alloc] initWithVersion:version2];
 
-    XCTAssertTrue([c1 compare:c2] == 0, @"expected %@ == %@", c1, c2);
-    XCTAssertTrue([c2 compare:c1] == 0, @"expected %@ == %@", c2, c1);
+    XCTAssertTrue([c1 compare:c2] == NSOrderedSame, @"expected %@ == %@", c1, c2);
+    XCTAssertTrue([c2 compare:c1] == NSOrderedSame, @"expected %@ == %@", c2, c1);
 }
 
 - (void)checkVersion:(NSString *)version1 comesBefore:(NSString *)version2 {
     GSComparableVersion *c1 = [[GSComparableVersion alloc] initWithVersion:version1];
     GSComparableVersion *c2 = [[GSComparableVersion alloc] initWithVersion:version2];
 
-    XCTAssertTrue([c1 compare:c2] < 0, @"expected %@ < %@", c1, c2);
-    XCTAssertTrue([c2 compare:c1] > 0, @"expected %@ > %@", c2, c1);
+    XCTAssertTrue([c1 compare:c2] == NSOrderedAscending, @"expected %@ < %@", c1, c2);
+    XCTAssertTrue([c2 compare:c1] == NSOrderedDescending, @"expected %@ > %@", c2, c1);
 }
 
 - (void)testVersionsQualifier {
@@ -69,82 +69,91 @@
 }
 
 - (void)testVersionsEqual {
-    [self checkVersion:@ "1" equals:@"1"];
-    [self checkVersion:@ "1" equals:@"1.0"];
-    [self checkVersion:@ "1" equals:@"1.0.0"];
-    [self checkVersion:@ "1.0" equals:@"1.0.0"];
-    [self checkVersion:@ "1" equals:@"1-0"];
-    [self checkVersion:@ "1" equals:@"1.0-0"];
-    [self checkVersion:@ "1.0" equals:@"1.0-0"];
+    [self checkVersion:@"1" equals:@"1"];
+    [self checkVersion:@"1" equals:@"1.0"];
+    [self checkVersion:@"1" equals:@"1.0.0"];
+    [self checkVersion:@"1.0" equals:@"1.0.0"];
+    [self checkVersion:@"1" equals:@"1-0"];
+    [self checkVersion:@"1" equals:@"1.0-0"];
+    [self checkVersion:@"1.0" equals:@"1.0-0"];
     // no separator between number and character
-    [self checkVersion:@ "1a" equals:@"1.a"];
-    [self checkVersion:@ "1a" equals:@"1-a"];
-    [self checkVersion:@ "1a" equals:@"1.0-a"];
-    [self checkVersion:@ "1a" equals:@"1.0.0-a"];
-    [self checkVersion:@ "1.0a" equals:@"1.0.a"];
-    [self checkVersion:@ "1.0.0a" equals:@"1.0.0.a"];
-    [self checkVersion:@ "1x" equals:@"1.x"];
-    [self checkVersion:@ "1x" equals:@"1-x"];
-    [self checkVersion:@ "1x" equals:@"1.0-x"];
-    [self checkVersion:@ "1x" equals:@"1.0.0-x"];
-    [self checkVersion:@ "1.0x" equals:@"1.0.x"];
-    [self checkVersion:@ "1.0.0x" equals:@"1.0.0.x"];
+    [self checkVersion:@"1a" equals:@"1.a"];
+    [self checkVersion:@"1a" equals:@"1-a"];
+    [self checkVersion:@"1a" equals:@"1.0-a"];
+    [self checkVersion:@"1a" equals:@"1.0.0-a"];
+    [self checkVersion:@"1.0a" equals:@"1.0.a"];
+    [self checkVersion:@"1.0.0a" equals:@"1.0.0.a"];
+    [self checkVersion:@"1x" equals:@"1.x"];
+    [self checkVersion:@"1x" equals:@"1-x"];
+    [self checkVersion:@"1x" equals:@"1.0-x"];
+    [self checkVersion:@"1x" equals:@"1.0.0-x"];
+    [self checkVersion:@"1.0x" equals:@"1.0.x"];
+    [self checkVersion:@"1.0.0x" equals:@"1.0.0.x"];
 
     // aliases
-    [self checkVersion:@ "1ga" equals:@"1"];
-    [self checkVersion:@ "1final" equals:@"1"];
-    [self checkVersion:@ "1cr" equals:@"1rc"];
+    [self checkVersion:@"1ga" equals:@"1"];
+    [self checkVersion:@"1final" equals:@"1"];
+    [self checkVersion:@"1cr" equals:@"1rc"];
 
     // special "aliases" a, b and m for alpha, beta and milestone
-    [self checkVersion:@ "1a1" equals:@"1alpha1"];
-    [self checkVersion:@ "1b2" equals:@"1beta2"];
-    [self checkVersion:@ "1m3" equals:@"1milestone3"];
+    [self checkVersion:@"1a1" equals:@"1alpha1"];
+    [self checkVersion:@"1b2" equals:@"1beta2"];
+    [self checkVersion:@"1m3" equals:@"1milestone3"];
 
     // case insensitive
-    [self checkVersion:@ "1X" equals:@"1x"];
-    [self checkVersion:@ "1A" equals:@"1a"];
-    [self checkVersion:@ "1B" equals:@"1b"];
-    [self checkVersion:@ "1M" equals:@"1m"];
-    [self checkVersion:@ "1Ga" equals:@"1"];
-    [self checkVersion:@ "1GA" equals:@"1"];
-    [self checkVersion:@ "1Final" equals:@"1"];
-    [self checkVersion:@ "1FinaL" equals:@"1"];
-    [self checkVersion:@ "1FINAL" equals:@"1"];
-    [self checkVersion:@ "1Cr" equals:@"1Rc"];
-    [self checkVersion:@ "1cR" equals:@"1rC"];
-    [self checkVersion:@ "1m3" equals:@"1Milestone3"];
-    [self checkVersion:@ "1m3" equals:@"1MileStone3"];
-    [self checkVersion:@ "1m3" equals:@"1MILESTONE3"];
+    [self checkVersion:@"1X" equals:@"1x"];
+    [self checkVersion:@"1A" equals:@"1a"];
+    [self checkVersion:@"1B" equals:@"1b"];
+    [self checkVersion:@"1M" equals:@"1m"];
+    [self checkVersion:@"1Ga" equals:@"1"];
+    [self checkVersion:@"1GA" equals:@"1"];
+    [self checkVersion:@"1Final" equals:@"1"];
+    [self checkVersion:@"1FinaL" equals:@"1"];
+    [self checkVersion:@"1FINAL" equals:@"1"];
+    [self checkVersion:@"1Cr" equals:@"1Rc"];
+    [self checkVersion:@"1cR" equals:@"1rC"];
+    [self checkVersion:@"1m3" equals:@"1Milestone3"];
+    [self checkVersion:@"1m3" equals:@"1MileStone3"];
+    [self checkVersion:@"1m3" equals:@"1MILESTONE3"];
 }
 
 - (void)testVersionComparing {
-    [self checkVersion:@ "1" comesBefore:@"2"];
-    [self checkVersion:@ "1.5" comesBefore:@"2"];
-    [self checkVersion:@ "1" comesBefore:@"2.5"];
-    [self checkVersion:@ "1.0" comesBefore:@"1.1"];
-    [self checkVersion:@ "1.1" comesBefore:@"1.2"];
-    [self checkVersion:@ "1.0.0" comesBefore:@"1.1"];
-    [self checkVersion:@ "1.0.1" comesBefore:@"1.1"];
-    [self checkVersion:@ "1.1" comesBefore:@"1.2.0"];
+    [self checkVersion:@"1" comesBefore:@"2"];
+    [self checkVersion:@"1.5" comesBefore:@"2"];
+    [self checkVersion:@"1" comesBefore:@"2.5"];
+    [self checkVersion:@"1.0" comesBefore:@"1.1"];
+    [self checkVersion:@"1.1" comesBefore:@"1.2"];
+    [self checkVersion:@"1.0.0" comesBefore:@"1.1"];
+    [self checkVersion:@"1.0.1" comesBefore:@"1.1"];
+    [self checkVersion:@"1.1" comesBefore:@"1.2.0"];
 
-    [self checkVersion:@ "1.0-alpha-1" comesBefore:@"1.0"];
-    [self checkVersion:@ "1.0-alpha-1" comesBefore:@"1.0-alpha-2"];
-    [self checkVersion:@ "1.0-alpha-1" comesBefore:@"1.0-beta-1"];
+    [self checkVersion:@"1.0-alpha-1" comesBefore:@"1.0"];
+    [self checkVersion:@"1.0-alpha-1" comesBefore:@"1.0-alpha-2"];
+    [self checkVersion:@"1.0-alpha-1" comesBefore:@"1.0-beta-1"];
 
-    [self checkVersion:@ "1.0-beta-1" comesBefore:@"1.0-SNAPSHOT"];
-    [self checkVersion:@ "1.0-SNAPSHOT" comesBefore:@"1.0"];
-    [self checkVersion:@ "1.0-alpha-1-SNAPSHOT" comesBefore:@"1.0-alpha-1"];
+    [self checkVersion:@"1.0-beta-1" comesBefore:@"1.0-SNAPSHOT"];
+    [self checkVersion:@"1.0-SNAPSHOT" comesBefore:@"1.0"];
+    [self checkVersion:@"1.0-alpha-1-SNAPSHOT" comesBefore:@"1.0-alpha-1"];
 
-    [self checkVersion:@ "1.0" comesBefore:@"1.0-1"];
-    [self checkVersion:@ "1.0-1" comesBefore:@"1.0-2"];
-    [self checkVersion:@ "1.0.0" comesBefore:@"1.0-1"];
+    [self checkVersion:@"1.0" comesBefore:@"1.0-1"];
+    [self checkVersion:@"1.0-1" comesBefore:@"1.0-2"];
+    [self checkVersion:@"1.0.0" comesBefore:@"1.0-1"];
 
-    [self checkVersion:@ "2.0-1" comesBefore:@"2.0.1"];
-    [self checkVersion:@ "2.0.1-klm" comesBefore:@"2.0.1-lmn"];
-    [self checkVersion:@ "2.0.1" comesBefore:@"2.0.1-xyz"];
+    [self checkVersion:@"2.0-1" comesBefore:@"2.0.1"];
+    [self checkVersion:@"2.0.1-klm" comesBefore:@"2.0.1-lmn"];
+    [self checkVersion:@"2.0.1" comesBefore:@"2.0.1-xyz"];
 
-    [self checkVersion:@ "2.0.1" comesBefore:@"2.0.1-123"];
-    [self checkVersion:@ "2.0.1-xyz" comesBefore:@"2.0.1-123"];
+    [self checkVersion:@"2.0.1" comesBefore:@"2.0.1-123"];
+    [self checkVersion:@"2.0.1-xyz" comesBefore:@"2.0.1-123"];
+}
+
+- (void)testEmptyAndNilStrings {
+    [self checkVersion:@"" equals:@""];
+    [self checkVersion:nil equals:nil];
+    [self checkVersion:nil equals:@""];
+
+    [self checkVersion:@"" comesBefore:@"1"];
+    [self checkVersion:nil comesBefore:@"1"];
 }
 
 @end

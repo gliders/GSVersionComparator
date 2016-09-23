@@ -21,27 +21,12 @@
 // Copyright (c) 2014 Glider Software, Inc All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import "GSItem.h"
 
-@implementation GSItem
+@interface GSListItem : GSItem
+@property (nonatomic, strong) NSMutableArray *list;
 
-- (NSComparisonResult)compare:(GSItem *)item {
-    return NSOrderedSame;
-}
-
-- (GSItemType)type {
-    return UNKNOWN_ITEM;
-}
-
-- (BOOL)isEmpty {
-    return YES;
-}
-
-- (NSString *)description {
-    NSMutableString *description = [NSMutableString stringWithFormat:@"<%@: ", NSStringFromClass([self class])];
-    [description appendFormat:@"value %@", self.value];
-    [description appendString:@">"];
-    return description;
-}
+- (void)normalize;
 
 @end

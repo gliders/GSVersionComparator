@@ -62,7 +62,7 @@
                     break;
             }
         }
-        NSString *value = [self.aliases objectForKey:[s lowercaseString]];
+        NSString *value = self.aliases[[s lowercaseString]];
         self.value = (value) ? value : s;
     }
 
@@ -91,8 +91,7 @@
         return [[self comparableQualifier:self.value] compare:[NSString stringWithFormat:@"%lu", (unsigned long) self.releaseVersionIndex]];
     }
 
-    switch (item.type)
-    {
+    switch (item.type) {
         case INTEGER_ITEM:
             return NSOrderedAscending; // 1.any < 1.1 ?
 
